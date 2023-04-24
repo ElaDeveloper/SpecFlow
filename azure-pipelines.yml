@@ -33,6 +33,7 @@ steps:
     command: 'custom'
     custom: 'new'
     arguments: 'tool-manifest'
+    
 - task: DotNetCoreCLI@2
   displayName: 'Installing Playwright Cli'
   inputs:
