@@ -1,0 +1,369 @@
+2023-04-21T10:02:06.893Z pw:api navigating to "https://org2b94446f.crm4.dynamics.com/main.aspx", waiting until "load"
+2023-04-21T10:02:07.375Z pw:api   "commit" event fired
+2023-04-21T10:02:07.376Z pw:api   navigated to "https://login.microsoftonline.com/0d66b7a0-9852-49dd-9a58-c6be258fc7f0/oauth2/authorize?client_id=00000007-0000-0000-c000-000000000000&response_mode=form_post&response_type=code+id_token&scope=openid+profile&state=OpenIdConnect.AuthenticationProperties%3dMAAAAK7S79ze2BHtrtAADTo6DQdKAWfEMq_Mb0_PbT51A-ave7PnyXtn28abUfyW8clTbQEAAAABAAAACS5yZWRpcmVjdC9odHRwczovL29yZzJiOTQ0NDZmLmNybTQuZHluYW1pY3MuY29tL21haW4uYXNweA%26RedirectTo%3dMAAAAK7S79ze2BHtrtAADTo6DQcVDFmZpq%252fXj8Nyoo9NAOvGEFU08UrLP4mMQMLTsUp2l2h0dHBzOi8vb3JnMmI5NDQ0NmYuY3JtNC5keW5hbWljcy5jb20v%26RedirectToForMcas%3dhttps%253a%252f%252forg2b94446f.crm4.dynamics.com%252fmain.aspx&nonce=638176681260045610.Mzk2NThjY2QtOTc0Yy00ZDNjLWEyNjAtMmE0MGMxMzVhMWZjNTllYWFkYzktYTkzYi00MzYyLTgwYTktZTI4NzdkNzk4Mzli&redirect_uri=https%3a%2f%2fams--eurcrmlivesg718.crm4.dynamics.com%2f&max_age=86400"
+2023-04-21T10:02:07.431Z pw:api   "load" event fired
+2023-04-21T10:02:07.432Z pw:api   "domcontentloaded" event fired
+2023-04-21T10:02:07.446Z pw:api waiting for Locator("input[type='email']") to be visible
+2023-04-21T10:02:07.663Z pw:api   "commit" event fired
+2023-04-21T10:02:07.663Z pw:api   navigated to "https://login.microsoftonline.com/0d66b7a0-9852-49dd-9a58-c6be258fc7f0/oauth2/authorize?client_id=00000007-0000-0000-c000-000000000000&response_mode=form_post&response_type=code+id_token&scope=openid+profile&state=OpenIdConnect.AuthenticationProperties%3dMAAAAK7S79ze2BHtrtAADTo6DQdKAWfEMq_Mb0_PbT51A-ave7PnyXtn28abUfyW8clTbQEAAAABAAAACS5yZWRpcmVjdC9odHRwczovL29yZzJiOTQ0NDZmLmNybTQuZHluYW1pY3MuY29tL21haW4uYXNweA%26RedirectTo%3dMAAAAK7S79ze2BHtrtAADTo6DQcVDFmZpq%252fXj8Nyoo9NAOvGEFU08UrLP4mMQMLTsUp2l2h0dHBzOi8vb3JnMmI5NDQ0NmYuY3JtNC5keW5hbWljcy5jb20v%26RedirectToForMcas%3dhttps%253a%252f%252forg2b94446f.crm4.dynamics.com%252fmain.aspx&nonce=638176681260045610.Mzk2NThjY2QtOTc0Yy00ZDNjLWEyNjAtMmE0MGMxMzVhMWZjNTllYWFkYzktYTkzYi00MzYyLTgwYTktZTI4NzdkNzk4Mzli&redirect_uri=https%3a%2f%2fams--eurcrmlivesg718.crm4.dynamics.com%2f&max_age=86400&sso_reload=true"
+2023-04-21T10:02:07.888Z pw:api   "load" event fired
+2023-04-21T10:02:07.890Z pw:api   "domcontentloaded" event fired
+2023-04-21T10:02:08.021Z pw:api   navigated to "https://login.microsoftonline.com/0d66b7a0-9852-49dd-9a58-c6be258fc7f0/oauth2/authorize?client_id=00000007-0000-0000-c000-000000000000&response_mode=form_post&response_type=code+id_token&scope=openid+profile&state=OpenIdConnect.AuthenticationProperties%3dMAAAAK7S79ze2BHtrtAADTo6DQdKAWfEMq_Mb0_PbT51A-ave7PnyXtn28abUfyW8clTbQEAAAABAAAACS5yZWRpcmVjdC9odHRwczovL29yZzJiOTQ0NDZmLmNybTQuZHluYW1pY3MuY29tL21haW4uYXNweA%26RedirectTo%3dMAAAAK7S79ze2BHtrtAADTo6DQcVDFmZpq%252fXj8Nyoo9NAOvGEFU08UrLP4mMQMLTsUp2l2h0dHBzOi8vb3JnMmI5NDQ0NmYuY3JtNC5keW5hbWljcy5jb20v%26RedirectToForMcas%3dhttps%253a%252f%252forg2b94446f.crm4.dynamics.com%252fmain.aspx&nonce=638176681260045610.Mzk2NThjY2QtOTc0Yy00ZDNjLWEyNjAtMmE0MGMxMzVhMWZjNTllYWFkYzktYTkzYi00MzYyLTgwYTktZTI4NzdkNzk4Mzli&redirect_uri=https%3a%2f%2fams--eurcrmlivesg718.crm4.dynamics.com%2f&max_age=86400&sso_reload=true"
+2023-04-21T10:02:08.026Z pw:api   navigated to "https://login.microsoftonline.com/0d66b7a0-9852-49dd-9a58-c6be258fc7f0/oauth2/authorize?client_id=00000007-0000-0000-c000-000000000000&response_mode=form_post&response_type=code+id_token&scope=openid+profile&state=OpenIdConnect.AuthenticationProperties%3dMAAAAK7S79ze2BHtrtAADTo6DQdKAWfEMq_Mb0_PbT51A-ave7PnyXtn28abUfyW8clTbQEAAAABAAAACS5yZWRpcmVjdC9odHRwczovL29yZzJiOTQ0NDZmLmNybTQuZHluYW1pY3MuY29tL21haW4uYXNweA%26RedirectTo%3dMAAAAK7S79ze2BHtrtAADTo6DQcVDFmZpq%252fXj8Nyoo9NAOvGEFU08UrLP4mMQMLTsUp2l2h0dHBzOi8vb3JnMmI5NDQ0NmYuY3JtNC5keW5hbWljcy5jb20v%26RedirectToForMcas%3dhttps%253a%252f%252forg2b94446f.crm4.dynamics.com%252fmain.aspx&nonce=638176681260045610.Mzk2NThjY2QtOTc0Yy00ZDNjLWEyNjAtMmE0MGMxMzVhMWZjNTllYWFkYzktYTkzYi00MzYyLTgwYTktZTI4NzdkNzk4Mzli&redirect_uri=https%3a%2f%2fams--eurcrmlivesg718.crm4.dynamics.com%2f&max_age=86400&sso_reload=true"
+2023-04-21T10:02:08.037Z pw:api   navigated to "https://login.microsoftonline.com/0d66b7a0-9852-49dd-9a58-c6be258fc7f0/oauth2/authorize?client_id=00000007-0000-0000-c000-000000000000&response_mode=form_post&response_type=code+id_token&scope=openid+profile&state=OpenIdConnect.AuthenticationProperties%3dMAAAAK7S79ze2BHtrtAADTo6DQdKAWfEMq_Mb0_PbT51A-ave7PnyXtn28abUfyW8clTbQEAAAABAAAACS5yZWRpcmVjdC9odHRwczovL29yZzJiOTQ0NDZmLmNybTQuZHluYW1pY3MuY29tL21haW4uYXNweA%26RedirectTo%3dMAAAAK7S79ze2BHtrtAADTo6DQcVDFmZpq%252fXj8Nyoo9NAOvGEFU08UrLP4mMQMLTsUp2l2h0dHBzOi8vb3JnMmI5NDQ0NmYuY3JtNC5keW5hbWljcy5jb20v%26RedirectToForMcas%3dhttps%253a%252f%252forg2b94446f.crm4.dynamics.com%252fmain.aspx&nonce=638176681260045610.Mzk2NThjY2QtOTc0Yy00ZDNjLWEyNjAtMmE0MGMxMzVhMWZjNTllYWFkYzktYTkzYi00MzYyLTgwYTktZTI4NzdkNzk4Mzli&redirect_uri=https%3a%2f%2fams--eurcrmlivesg718.crm4.dynamics.com%2f&max_age=86400&sso_reload=true"
+2023-04-21T10:02:08.049Z pw:api   navigated to "https://login.microsoftonline.com/0d66b7a0-9852-49dd-9a58-c6be258fc7f0/oauth2/authorize?client_id=00000007-0000-0000-c000-000000000000&response_mode=form_post&response_type=code+id_token&scope=openid+profile&state=OpenIdConnect.AuthenticationProperties%3dMAAAAK7S79ze2BHtrtAADTo6DQdKAWfEMq_Mb0_PbT51A-ave7PnyXtn28abUfyW8clTbQEAAAABAAAACS5yZWRpcmVjdC9odHRwczovL29yZzJiOTQ0NDZmLmNybTQuZHluYW1pY3MuY29tL21haW4uYXNweA%26RedirectTo%3dMAAAAK7S79ze2BHtrtAADTo6DQcVDFmZpq%252fXj8Nyoo9NAOvGEFU08UrLP4mMQMLTsUp2l2h0dHBzOi8vb3JnMmI5NDQ0NmYuY3JtNC5keW5hbWljcy5jb20v%26RedirectToForMcas%3dhttps%253a%252f%252forg2b94446f.crm4.dynamics.com%252fmain.aspx&nonce=638176681260045610.Mzk2NThjY2QtOTc0Yy00ZDNjLWEyNjAtMmE0MGMxMzVhMWZjNTllYWFkYzktYTkzYi00MzYyLTgwYTktZTI4NzdkNzk4Mzli&redirect_uri=https%3a%2f%2fams--eurcrmlivesg718.crm4.dynamics.com%2f&max_age=86400&sso_reload=true"
+2023-04-21T10:02:08.541Z pw:api   locator resolved to visible <input id="i0116" type="email" name="loginfmt" maxlengtÔÇª/>
+2023-04-21T10:02:08.564Z pw:api waiting for Locator("input[type='email']")
+2023-04-21T10:02:08.569Z pw:api   locator resolved to <input id="i0116" type="email" name="loginfmt" maxlengtÔÇª/>
+2023-04-21T10:02:08.572Z pw:api elementHandle.fill("admin@CRM253142.onmicrosoft.com")
+2023-04-21T10:02:08.572Z pw:api   waiting for element to be visible, enabled and editable
+2023-04-21T10:02:08.586Z pw:api   element is visible, enabled and editable
+2023-04-21T10:02:08.597Z pw:api waiting for Locator("input[type='submit'][class*='primary']") to be visible
+2023-04-21T10:02:08.603Z pw:api   locator resolved to visible <input value="Next" type="submit" id="idSIButton9" dataÔÇª/>
+2023-04-21T10:02:08.614Z pw:api waiting for Locator("input[type='submit'][class*='primary']")
+2023-04-21T10:02:08.620Z pw:api   locator resolved to <input value="Next" type="submit" id="idSIButton9" dataÔÇª/>
+2023-04-21T10:02:08.622Z pw:api attempting click action
+2023-04-21T10:02:08.623Z pw:api   waiting for element to be visible, enabled and stable
+2023-04-21T10:02:08.665Z pw:api   element is visible, enabled and stable
+2023-04-21T10:02:08.665Z pw:api   scrolling into view if needed
+2023-04-21T10:02:08.666Z pw:api   done scrolling
+2023-04-21T10:02:08.672Z pw:api   performing click action
+2023-04-21T10:02:08.695Z pw:api   click action done
+2023-04-21T10:02:08.695Z pw:api   waiting for scheduled navigations to finish
+2023-04-21T10:02:08.696Z pw:api   navigations have finished
+2023-04-21T10:02:08.700Z pw:api waiting for Locator("input[type='password']") to be visible
+2023-04-21T10:02:08.704Z pw:api   locator resolved to visible <input id="i0118" name="passwd" tabindex="-1" type="pasÔÇª/>
+2023-04-21T10:02:08.712Z pw:api waiting for Locator("input[type='password']")
+2023-04-21T10:02:08.717Z pw:api   locator resolved to <input id="i0118" name="passwd" tabindex="-1" type="pasÔÇª/>
+2023-04-21T10:02:08.718Z pw:api attempting click action
+2023-04-21T10:02:08.718Z pw:api   waiting for element to be visible, enabled and stable
+2023-04-21T10:02:08.747Z pw:api   element is visible, enabled and stable
+2023-04-21T10:02:08.747Z pw:api   scrolling into view if needed
+2023-04-21T10:02:08.748Z pw:api   done scrolling
+2023-04-21T10:02:08.752Z pw:api   <div id="footerLinks" data-bind="externalCss: { 'footÔÇª>ÔÇª</div> from <div id="footer" role="contentinfo" class="footer extÔÇª>ÔÇª</div> subtree intercepts pointer events
+2023-04-21T10:02:08.752Z pw:api retrying click action, attempt #1
+2023-04-21T10:02:08.752Z pw:api   waiting for element to be visible, enabled and stable
+2023-04-21T10:02:08.781Z pw:api   element is visible, enabled and stable
+2023-04-21T10:02:08.781Z pw:api   scrolling into view if needed
+2023-04-21T10:02:08.783Z pw:api   done scrolling
+2023-04-21T10:02:08.786Z pw:api   <div id="footerLinks" data-bind="externalCss: { 'footÔÇª>ÔÇª</div> from <div id="footer" role="contentinfo" class="footer extÔÇª>ÔÇª</div> subtree intercepts pointer events
+2023-04-21T10:02:08.787Z pw:api retrying click action, attempt #2
+2023-04-21T10:02:08.787Z pw:api   waiting 20ms
+2023-04-21T10:02:08.811Z pw:api   waiting for element to be visible, enabled and stable
+2023-04-21T10:02:08.829Z pw:api   navigated to "https://login.microsoftonline.com/0d66b7a0-9852-49dd-9a58-c6be258fc7f0/oauth2/authorize?client_id=00000007-0000-0000-c000-000000000000&response_mode=form_post&response_type=code+id_token&scope=openid+profile&state=OpenIdConnect.AuthenticationProperties%3dMAAAAK7S79ze2BHtrtAADTo6DQdKAWfEMq_Mb0_PbT51A-ave7PnyXtn28abUfyW8clTbQEAAAABAAAACS5yZWRpcmVjdC9odHRwczovL29yZzJiOTQ0NDZmLmNybTQuZHluYW1pY3MuY29tL21haW4uYXNweA%26RedirectTo%3dMAAAAK7S79ze2BHtrtAADTo6DQcVDFmZpq%252fXj8Nyoo9NAOvGEFU08UrLP4mMQMLTsUp2l2h0dHBzOi8vb3JnMmI5NDQ0NmYuY3JtNC5keW5hbWljcy5jb20v%26RedirectToForMcas%3dhttps%253a%252f%252forg2b94446f.crm4.dynamics.com%252fmain.aspx&nonce=638176681260045610.Mzk2NThjY2QtOTc0Yy00ZDNjLWEyNjAtMmE0MGMxMzVhMWZjNTllYWFkYzktYTkzYi00MzYyLTgwYTktZTI4NzdkNzk4Mzli&redirect_uri=https%3a%2f%2fams--eurcrmlivesg718.crm4.dynamics.com%2f&max_age=86400&sso_reload=true"
+2023-04-21T10:02:08.847Z pw:api   element is visible, enabled and stable
+2023-04-21T10:02:08.847Z pw:api   scrolling into view if needed
+2023-04-21T10:02:08.848Z pw:api   done scrolling
+2023-04-21T10:02:08.851Z pw:api   <div id="footerLinks" data-bind="externalCss: { 'footÔÇª>ÔÇª</div> from <div id="footer" role="contentinfo" class="footer extÔÇª>ÔÇª</div> subtree intercepts pointer events
+2023-04-21T10:02:08.851Z pw:api retrying click action, attempt #3
+2023-04-21T10:02:08.851Z pw:api   waiting 100ms
+2023-04-21T10:02:08.961Z pw:api   waiting for element to be visible, enabled and stable
+2023-04-21T10:02:09.000Z pw:api   element is visible, enabled and stable
+2023-04-21T10:02:09.000Z pw:api   scrolling into view if needed
+2023-04-21T10:02:09.002Z pw:api   done scrolling
+2023-04-21T10:02:09.006Z pw:api   <div id="footerLinks" data-bind="externalCss: { 'footÔÇª>ÔÇª</div> from <div id="footer" role="contentinfo" class="footer extÔÇª>ÔÇª</div> subtree intercepts pointer events
+2023-04-21T10:02:09.006Z pw:api retrying click action, attempt #4
+2023-04-21T10:02:09.006Z pw:api   waiting 100ms
+2023-04-21T10:02:09.110Z pw:api   waiting for element to be visible, enabled and stable
+2023-04-21T10:02:09.146Z pw:api element was detached from the DOM, retrying
+2023-04-21T10:02:09.150Z pw:api   locator resolved to <input id="i0118" tabindex="0" name="passwd" type="passÔÇª/>
+2023-04-21T10:02:09.151Z pw:api attempting click action
+2023-04-21T10:02:09.151Z pw:api   waiting for element to be visible, enabled and stable
+2023-04-21T10:02:09.178Z pw:api     element is not stable - waiting...
+2023-04-21T10:02:09.397Z pw:api   element is visible, enabled and stable
+2023-04-21T10:02:09.397Z pw:api   scrolling into view if needed
+2023-04-21T10:02:09.398Z pw:api   done scrolling
+2023-04-21T10:02:09.401Z pw:api   performing click action
+2023-04-21T10:02:09.406Z pw:api   click action done
+2023-04-21T10:02:09.406Z pw:api   waiting for scheduled navigations to finish
+2023-04-21T10:02:09.407Z pw:api   navigations have finished
+2023-04-21T10:02:09.409Z pw:api waiting for Locator("input[type='password']")
+2023-04-21T10:02:09.414Z pw:api   locator resolved to <input id="i0118" tabindex="0" name="passwd" type="passÔÇª/>
+2023-04-21T10:02:09.416Z pw:api elementHandle.fill("^9eM(LFc872yK$~s")
+2023-04-21T10:02:09.416Z pw:api   waiting for element to be visible, enabled and editable
+2023-04-21T10:02:09.423Z pw:api   element is visible, enabled and editable
+2023-04-21T10:02:09.431Z pw:api waiting for Locator("input[type='submit'][class*='primary']") to be visible
+2023-04-21T10:02:09.435Z pw:api   locator resolved to visible <input type="submit" value="Sign in" id="idSIButton9" dÔÇª/>
+2023-04-21T10:02:09.441Z pw:api waiting for Locator("input[type='submit'][class*='primary']")
+2023-04-21T10:02:09.446Z pw:api   locator resolved to <input type="submit" value="Sign in" id="idSIButton9" dÔÇª/>
+2023-04-21T10:02:09.448Z pw:api attempting click action
+2023-04-21T10:02:09.448Z pw:api   waiting for element to be visible, enabled and stable
+2023-04-21T10:02:09.478Z pw:api   element is visible, enabled and stable
+2023-04-21T10:02:09.478Z pw:api   scrolling into view if needed
+2023-04-21T10:02:09.479Z pw:api   done scrolling
+2023-04-21T10:02:09.483Z pw:api   performing click action
+2023-04-21T10:02:09.687Z pw:api   click action done
+2023-04-21T10:02:09.687Z pw:api   waiting for scheduled navigations to finish
+2023-04-21T10:02:09.687Z pw:api   "commit" event fired
+2023-04-21T10:02:09.687Z pw:api   navigated to "https://login.microsoftonline.com/0d66b7a0-9852-49dd-9a58-c6be258fc7f0/login"
+2023-04-21T10:02:09.688Z pw:api   navigated to "https://login.microsoftonline.com/0d66b7a0-9852-49dd-9a58-c6be258fc7f0/login"
+2023-04-21T10:02:09.698Z pw:api   navigations have finished
+2023-04-21T10:02:09.706Z pw:api   checking visibility of Locator("#lightbox")
+2023-04-21T10:02:09.713Z pw:api waiting for GetByLabel("Don't show this again")
+2023-04-21T10:02:09.764Z pw:api   navigated to "https://login.microsoftonline.com/0d66b7a0-9852-49dd-9a58-c6be258fc7f0/login"
+2023-04-21T10:02:09.764Z pw:api   navigated to "https://login.microsoftonline.com/0d66b7a0-9852-49dd-9a58-c6be258fc7f0/login"
+2023-04-21T10:02:09.765Z pw:api   "load" event fired
+2023-04-21T10:02:09.766Z pw:api   "domcontentloaded" event fired
+2023-04-21T10:02:09.791Z pw:api   navigated to "https://login.microsoftonline.com/0d66b7a0-9852-49dd-9a58-c6be258fc7f0/login"
+2023-04-21T10:02:09.799Z pw:api   navigated to "https://login.microsoftonline.com/0d66b7a0-9852-49dd-9a58-c6be258fc7f0/login"
+2023-04-21T10:02:09.857Z pw:api   locator resolved to <input value="true" type="checkbox" name="DontShowAgainÔÇª/>
+2023-04-21T10:02:09.864Z pw:api attempting click action
+2023-04-21T10:02:09.864Z pw:api   waiting for element to be visible, enabled and stable
+2023-04-21T10:02:09.898Z pw:api   element is visible, enabled and stable
+2023-04-21T10:02:09.898Z pw:api   scrolling into view if needed
+2023-04-21T10:02:09.900Z pw:api   done scrolling
+2023-04-21T10:02:09.907Z pw:api   performing click action
+2023-04-21T10:02:09.916Z pw:api   click action done
+2023-04-21T10:02:09.916Z pw:api   waiting for scheduled navigations to finish
+2023-04-21T10:02:09.917Z pw:api   navigations have finished
+2023-04-21T10:02:09.922Z pw:api waiting for Locator("input[type='submit']")
+2023-04-21T10:02:09.929Z pw:api   locator resolved to <input value="Yes" type="submit" id="idSIButton9" data-ÔÇª/>
+2023-04-21T10:02:09.930Z pw:api attempting click action
+2023-04-21T10:02:09.931Z pw:api   waiting for element to be visible, enabled and stable
+2023-04-21T10:02:09.964Z pw:api   element is visible, enabled and stable
+2023-04-21T10:02:09.964Z pw:api   scrolling into view if needed
+2023-04-21T10:02:09.965Z pw:api   done scrolling
+2023-04-21T10:02:09.968Z pw:api   performing click action
+2023-04-21T10:02:09.986Z pw:api   click action done
+2023-04-21T10:02:09.986Z pw:api   waiting for scheduled navigations to finish
+2023-04-21T10:02:10.155Z pw:api   "commit" event fired
+2023-04-21T10:02:10.155Z pw:api   navigated to "https://login.microsoftonline.com/kmsi"
+2023-04-21T10:02:10.155Z pw:api   navigated to "https://login.microsoftonline.com/kmsi"
+2023-04-21T10:02:10.157Z pw:api   navigations have finished
+2023-04-21T10:02:10.213Z pw:api waiting for FrameLocator("#AppLandingPage").Locator("div[data-lp-id*='saleshub'][role='listitem']")
+2023-04-21T10:02:10.298Z pw:api   "commit" event fired
+2023-04-21T10:02:10.299Z pw:api   navigated to "https://ams--eurcrmlivesg718.crm4.dynamics.com/"
+2023-04-21T10:02:10.312Z pw:api   "load" event fired
+2023-04-21T10:02:10.313Z pw:api   "domcontentloaded" event fired
+2023-04-21T10:02:21.211Z pw:api   "commit" event fired
+2023-04-21T10:02:21.211Z pw:api   navigated to "https://org2b94446f.crm4.dynamics.com/main.aspx?forceUCI=1&pagetype=apps"
+2023-04-21T10:02:21.673Z pw:api   "load" event fired
+2023-04-21T10:02:21.674Z pw:api   "domcontentloaded" event fired
+2023-04-21T10:02:32.357Z pw:api   navigated to "https://org2b94446f.crm4.dynamics.com/main.aspx?forceUCI=1&pagetype=apps"
+2023-04-21T10:02:32.366Z pw:api   navigated to "https://org2b94446f.crm4.dynamics.com/uclient/blank.htm?v=1.4.5574-2303.3"
+2023-04-21T10:02:32.581Z pw:api   navigated to "https://org2b94446f.crm4.dynamics.com/main.aspx?forceUCI=1&pagetype=apps"
+2023-04-21T10:02:32.583Z pw:api   navigated to "https://org2b94446f.crm4.dynamics.com/main.aspx?forceUCI=1&pagetype=apps"
+2023-04-21T10:02:32.586Z pw:api   navigated to "https://org2b94446f.crm4.dynamics.com/main.aspx?forceUCI=1&pagetype=apps"
+2023-04-21T10:02:32.646Z pw:api   navigated to "https://org2b94446f.crm4.dynamics.com/uclient/blank.htm?v=1.4.5574-2303.3"
+2023-04-21T10:02:33.597Z pw:api   navigated to "https://org2b94446f.crm4.dynamics.com/%7b638176051020000204%7d/webresources/msdyn_appmanagementcontrol"
+2023-04-21T10:02:38.277Z pw:api   locator resolved to <div role="listitem" id="AppTileContainerSec_1_LI_14"ÔÇª>ÔÇª</div>
+2023-04-21T10:02:38.278Z pw:api attempting click action
+2023-04-21T10:02:38.278Z pw:api   waiting for element to be visible, enabled and stable
+2023-04-21T10:02:38.399Z pw:api   element is visible, enabled and stable
+2023-04-21T10:02:38.399Z pw:api   scrolling into view if needed
+2023-04-21T10:02:38.400Z pw:api   done scrolling
+2023-04-21T10:02:38.427Z pw:api   performing click action
+2023-04-21T10:02:41.764Z pw:api   navigated to "https://org2b94446f.crm4.dynamics.com/uclient/blank.htm?v=1.4.5574-2303.3"
+2023-04-21T10:02:41.796Z pw:api   click action done
+2023-04-21T10:02:41.796Z pw:api   waiting for scheduled navigations to finish
+2023-04-21T10:02:41.809Z pw:api   "commit" event fired
+2023-04-21T10:02:41.809Z pw:api   navigated to "https://org2b94446f.crm4.dynamics.com/main.aspx?appid=0a08bd1e-54c5-ed11-b597-000d3a4755c6"
+2023-04-21T10:02:41.809Z pw:api   navigated to "https://org2b94446f.crm4.dynamics.com/main.aspx?appid=0a08bd1e-54c5-ed11-b597-000d3a4755c6"
+2023-04-21T10:02:41.815Z pw:api   navigations have finished
+2023-04-21T10:02:41.830Z pw:api waiting for Locator("div[title='Accounts']")
+2023-04-21T10:02:41.956Z pw:api   "load" event fired
+2023-04-21T10:02:41.957Z pw:api   "domcontentloaded" event fired
+2023-04-21T10:02:49.701Z pw:api   navigated to "https://org2b94446f.crm4.dynamics.com/uclient/blank.htm?v=1.4.5574-2303.3"
+2023-04-21T10:02:49.747Z pw:api   navigated to "https://org2b94446f.crm4.dynamics.com/main.aspx?appid=0a08bd1e-54c5-ed11-b597-000d3a4755c6&pagetype=control&controlName=MscrmControls.AcceleratedSales.AnchorShellControl"
+2023-04-21T10:02:50.016Z pw:api   locator resolved to <div title="Accounts" role="presentation" class="pa-aÔÇª>ÔÇª</div>
+2023-04-21T10:02:50.074Z pw:api   navigated to "https://org2b94446f.crm4.dynamics.com/main.aspx?appid=0a08bd1e-54c5-ed11-b597-000d3a4755c6&pagetype=control&controlName=MscrmControls.AcceleratedSales.AnchorShellControl"
+2023-04-21T10:02:50.078Z pw:api   navigated to "https://org2b94446f.crm4.dynamics.com/main.aspx?appid=0a08bd1e-54c5-ed11-b597-000d3a4755c6&pagetype=control&controlName=MscrmControls.AcceleratedSales.AnchorShellControl"
+2023-04-21T10:02:50.081Z pw:api   navigated to "https://org2b94446f.crm4.dynamics.com/main.aspx?appid=0a08bd1e-54c5-ed11-b597-000d3a4755c6&pagetype=control&controlName=MscrmControls.AcceleratedSales.AnchorShellControl"
+2023-04-21T10:02:50.085Z pw:api attempting click action
+2023-04-21T10:02:50.085Z pw:api   waiting for element to be visible, enabled and stable
+2023-04-21T10:02:50.120Z pw:api   navigated to "https://org2b94446f.crm4.dynamics.com/uclient/blank.htm?v=1.4.5574-2303.3"
+2023-04-21T10:02:50.180Z pw:api   element is visible, enabled and stable
+2023-04-21T10:02:50.180Z pw:api   scrolling into view if needed
+2023-04-21T10:02:50.217Z pw:api   done scrolling
+2023-04-21T10:02:50.222Z pw:api   performing click action
+2023-04-21T10:02:50.247Z pw:api   navigated to "https://org2b94446f.crm4.dynamics.com/main.aspx?appid=0a08bd1e-54c5-ed11-b597-000d3a4755c6&pagetype=entitylist&etn=account"
+2023-04-21T10:02:50.289Z pw:api   click action done
+2023-04-21T10:02:50.289Z pw:api   waiting for scheduled navigations to finish
+2023-04-21T10:02:50.294Z pw:api   navigations have finished
+2023-04-21T10:02:50.314Z pw:api waiting for Locator("button[aria-label='New']")
+2023-04-21T10:02:51.300Z pw:api   navigated to "https://org2b94446f.crm4.dynamics.com/main.aspx?appid=0a08bd1e-54c5-ed11-b597-000d3a4755c6&pagetype=entitylist&etn=account"
+2023-04-21T10:02:51.337Z pw:api   navigated to "https://org2b94446f.crm4.dynamics.com/uclient/blank.htm?v=1.4.5574-2303.3"
+2023-04-21T10:02:52.858Z pw:api   navigated to "https://org2b94446f.crm4.dynamics.com/main.aspx?appid=0a08bd1e-54c5-ed11-b597-000d3a4755c6&pagetype=entitylist&etn=account&viewid=00000000-0000-0000-00aa-000010001001&viewType=1039"
+2023-04-21T10:03:02.017Z pw:api   navigated to "https://org2b94446f.crm4.dynamics.com/uclient/blank.htm?v=1.4.5574-2303.3"
+2023-04-21T10:03:02.519Z pw:api   navigated to "https://mem.gfx.ms/me/mecache?partner=officesupport&wreply=https%3A%2F%2Forg2b94446f.crm4.dynamics.com"
+2023-04-21T10:03:03.242Z pw:api   navigated to "https://org2b94446f.crm4.dynamics.com/main.aspx?appid=0a08bd1e-54c5-ed11-b597-000d3a4755c6&pagetype=entitylist&etn=account&viewid=00000000-0000-0000-00aa-000010001001&viewType=1039"
+2023-04-21T10:03:03.247Z pw:api   navigated to "https://org2b94446f.crm4.dynamics.com/main.aspx?appid=0a08bd1e-54c5-ed11-b597-000d3a4755c6&pagetype=entitylist&etn=account&viewid=00000000-0000-0000-00aa-000010001001&viewType=1039"
+2023-04-21T10:03:05.460Z pw:api   navigated to "https://mem.gfx.ms/me/mecache?partner=officesupport&wreply=https%3A%2F%2Forg2b94446f.crm4.dynamics.com"
+2023-04-21T10:03:05.569Z pw:api   locator resolved to <button tabindex="-1" type="button" role="menuitem" ariaÔÇª>ÔÇª</button>
+2023-04-21T10:03:05.572Z pw:api attempting click action
+2023-04-21T10:03:05.572Z pw:api   waiting for element to be visible, enabled and stable
+2023-04-21T10:03:05.598Z pw:api     element is not visible - waiting...
+2023-04-21T10:03:06.663Z pw:api   navigated to "https://apps.powerapps.com/apphost/e/b29456e3-c852-e1c4-b55b-49801dfcce4e/a/msdynce_saleshub?skipIframeCreation=true&hideNavBar=true&hostMode=0&authMode=5&correlationId=c4e76388-83b4-4261-8a49-0c17f39bcfda&locale=en-US&isPreviewMode=false&skipLaunchAppCache=false&embedderOrigin=https%3A%2F%2Forg2b94446f.crm4.dynamics.com&appMetadataVersion=6203475&standAloneConsent=true"
+2023-04-21T10:03:07.056Z pw:api   navigated to "https://apps.powerapps.com/authflow/authframe?telemetryLocation=eu"
+2023-04-21T10:03:07.391Z pw:api   navigated to "about:blank"
+2023-04-21T10:03:07.406Z pw:api   navigated to "about:blank"
+2023-04-21T10:03:07.576Z pw:api   navigated to "https://apps.powerapps.com/auth-redirect.html#code=0.AUsAoLdmDVKY3UmaWMa-JY_H8B74Yj4LWVtClTHK1mg2Vs9LAIU.AgABAAIAAAD--DLA3VO7QrddgJg7WevrAgDs_wUA9P_6JleAvQ1e6TadDFj69Wz2OFcB8yhvOg2X_DExCEOQHF0JfLoNAudK_OoS-nXBH7KiB5j2GZ_kx0UmH9ietwiZhJN9V-qnCyaeGWnQCdWNKLT2DtPp1gNGJf1dK9pU44a5CzyxTJY55or2jd2Ap412VwKsejCy7tccazs_k2M2t-3h3zn_ZLPHuD6nI112pCwIbNF9xAM1l2XsPXJ3yuSuPwpJLyA7k1ufNz4QICFW9m0CZgZFxXiFSd_WittaDby0CbvA-g8ABshmmDN0qg9A5aPwxVB-qXMvBQ6OcdpQOkKoROTpfA1C2o4d73uETirOVXBjYczabpzmci2f8CvccpgTSh73EBdRotqey4P0x0Fl6tMY0ZeJ-YBL7oZHBiZoLVJ3PFU8_Y9ltf7MbLcDrgcfUUaockfEjgEJICr9zVVCdreiAkIEl5xEXUgSSsnWipCXvukWrjgs06FStStTybjfvNlFfEi3ZGSoObS84WoQNHTO1Zgi3catbfeOooJyRasR8P8z_1ra749sIRaSpmYPcjmvlRVvI72hTT3at9kwmtS2hJEDVHjWlhE5rovK3DyOWJUL_2oZpms_KtqcSYloVijWrwF9W5Fa-9eGOoB_VawZFg0HSie9SjAjRmw__VhPPgaKSt8-fhJvvztwi18pGvt-2nIL9Ah3oDpPJ5OafRz0rI5o-9pjfrvLeRvcpgqORFsVwvqijcERI-6t8aZtzMcSC4DgK5dKmOdEJWfj-eTtbxw1oVDOixT_n900hh6SHzwmzF0gcPVQ8SfdMRCgE1K2O8I3HSy2zFtv2lJ62Zp38kXkgYnJE86Uyjxv20vVC4JR_imw2GaVuI_nomEnKGDGEYkit5I4&client_info=eyJ1aWQiOiJiZWNkN2U2YS0zYzA5LTQ5NTgtYWYzNC00M2I0ZDA2NzJmYTgiLCJ1dGlkIjoiMGQ2NmI3YTAtOTg1Mi00OWRkLTlhNTgtYzZiZTI1OGZjN2YwIn0&state=eyJpZCI6ImE3NTE5NzRlLTc4YTgtNDNmNy04MWExLTllMjZlZjQ1NDdlZSIsIm1ldGEiOnsiaW50ZXJhY3Rpb25UeXBlIjoic2lsZW50In19&session_state=497c9a3b-ebaa-45eb-86b0-3fa6ee8fc062"
+2023-04-21T10:03:07.585Z pw:api   navigated to "https://apps.powerapps.com/auth-redirect.html#code=0.AUsAoLdmDVKY3UmaWMa-JY_H8B74Yj4LWVtClTHK1mg2Vs9LAIU.AgABAAIAAAD--DLA3VO7QrddgJg7WevrAgDs_wUA9P9ddtWhYRmJmNVVLtwnX3agcOSUXP54RgmQ9kpc4-xhGo55QppE6Sr_iq-LarHYFa8cCpp8ioLJ1lALmbBi-GeR3H-LsirCd5WKZBnbuVokW-rDlr7uEaa66GVQmec8EMmxXqLchyej6nMdm3mtGbBnKKKWfc4UZ5XfqvQiWWD2ZbwkTvCX5eQeOwrcf07wg3jdADkIJRe_C6zijjZtE00A__IeOB1KkATuLBcN-Pbm8iR8HbNp4YI54fp38jAoj17B1XnyQVPQcFiVqwTVt16NZTWSWe7W-M1wjupb6Q2rOEVCzjgK1EPj2_n5dGRFt2DSt084zQRDe3SIkor6ztVHBGX438fbwTpaIaL-71zjC3taEVFkzbHHoawHEH4JLR7paH50nI7_21531UztVu4oKm51txlndJXxN3o6vbsXax7e4kjHEEfqyrmggzkzswwUDWsbNUQnjmxqeXpmEbJt8URxfUh5i_kkcVjdQimu3yYjcQlvUoHWiFtYiDv9dXB63M3AmykqiR6YmffK4krWS5PUX4gj_cz-LDZVR9Nunf3inbtr_pK2mzbR5wyryeSW-60YANq08-XTeoHR6L96C3Z1KLhPDH6gObqwseWXujpTZRsmFkYN_uD3B8F_bJ_O3JRH7k4OduP4EbdP38ZWS_TcUARw3BWE0E5I-nqtAKw4GGz92K7vOCnhcaJpifZJXImlrR-XGrhPv_jqdeJTMNeCX2v-9lB45dIpADStDwJXsZDD8LY39f-BaLVIuIkmkA3vtONw6mG08zFxlukd9mwl5xCRJKgUY0SJcOW74lHrmoru_ZB9AFbCO5CWJFeZ2-73NQF-VZlXBs49NzM7mhPK7o2aeY2_VA&client_info=eyJ1aWQiOiJiZWNkN2U2YS0zYzA5LTQ5NTgtYWYzNC00M2I0ZDA2NzJmYTgiLCJ1dGlkIjoiMGQ2NmI3YTAtOTg1Mi00OWRkLTlhNTgtYzZiZTI1OGZjN2YwIn0&state=eyJpZCI6IjM0NDU5MTliLWE1NTQtNDc4Mi05ZGZjLTk3OWIyZDlmMWU5ZCIsIm1ldGEiOnsiaW50ZXJhY3Rpb25UeXBlIjoic2lsZW50In19&session_state=497c9a3b-ebaa-45eb-86b0-3fa6ee8fc062"
+2023-04-21T10:03:08.916Z pw:api   element is visible, enabled and stable
+2023-04-21T10:03:08.916Z pw:api   scrolling into view if needed
+2023-04-21T10:03:08.917Z pw:api   done scrolling
+2023-04-21T10:03:08.920Z pw:api   performing click action
+2023-04-21T10:03:08.951Z pw:api   navigated to "https://org2b94446f.crm4.dynamics.com/main.aspx?appid=0a08bd1e-54c5-ed11-b597-000d3a4755c6&pagetype=entityrecord&etn=account"
+2023-04-21T10:03:08.956Z pw:api   click action done
+2023-04-21T10:03:08.956Z pw:api   waiting for scheduled navigations to finish
+2023-04-21T10:03:08.958Z pw:api   navigations have finished
+2023-04-21T10:03:08.962Z pw:api waiting for Locator("input[aria-label= 'Account Name']")
+2023-04-21T10:03:09.064Z pw:api   navigated to "https://org2b94446f.crm4.dynamics.com/main.aspx?appid=0a08bd1e-54c5-ed11-b597-000d3a4755c6&pagetype=entityrecord&etn=account"
+2023-04-21T10:03:09.067Z pw:api   navigated to "https://org2b94446f.crm4.dynamics.com/main.aspx?appid=0a08bd1e-54c5-ed11-b597-000d3a4755c6&pagetype=entityrecord&etn=account"
+2023-04-21T10:03:09.069Z pw:api   navigated to "https://org2b94446f.crm4.dynamics.com/main.aspx?appid=0a08bd1e-54c5-ed11-b597-000d3a4755c6&pagetype=entityrecord&etn=account"
+2023-04-21T10:03:09.262Z pw:api   navigated to "https://org2b94446f.crm4.dynamics.com/uclient/blank.htm?v=1.4.5574-2303.3"
+2023-04-21T10:03:10.098Z pw:api   locator resolved to <input title="" type="text" value="---" placeholder="" ÔÇª/>
+2023-04-21T10:03:10.109Z pw:api elementHandle.fill("Ela-Example1")
+2023-04-21T10:03:10.109Z pw:api   waiting for element to be visible, enabled and editable
+2023-04-21T10:03:10.608Z pw:api   element is visible, enabled and editable
+2023-04-21T10:03:10.663Z pw:api waiting for Locator("input[aria-label='Parent Account, Lookup']")
+2023-04-21T10:03:10.767Z pw:api   locator resolved to <input title="" type="text" value="---" placeholder="" ÔÇª/>
+2023-04-21T10:03:10.769Z pw:api elementHandle.fill("A Datum Corporation")
+2023-04-21T10:03:10.769Z pw:api   waiting for element to be visible, enabled and editable
+2023-04-21T10:03:10.892Z pw:api   element is visible, enabled and editable
+2023-04-21T10:03:10.941Z pw:api waiting for Locator("button[data-id='parentaccountid.fieldControl-LookupResultsDropdown_parentaccountid_search']")
+2023-04-21T10:03:10.948Z pw:api   locator resolved to <button type="button" aria-haspopup="tree" aria-expandedÔÇª>ÔÇª</button>
+2023-04-21T10:03:11.002Z pw:api attempting click action
+2023-04-21T10:03:11.002Z pw:api   waiting for element to be visible, enabled and stable
+2023-04-21T10:03:11.197Z pw:api   element is visible, enabled and stable
+2023-04-21T10:03:11.197Z pw:api   scrolling into view if needed
+2023-04-21T10:03:11.201Z pw:api   done scrolling
+2023-04-21T10:03:11.208Z pw:api   performing click action
+2023-04-21T10:03:11.345Z pw:api   click action done
+2023-04-21T10:03:11.345Z pw:api   waiting for scheduled navigations to finish
+2023-04-21T10:03:11.347Z pw:api   navigations have finished
+2023-04-21T10:03:11.350Z pw:api   checking visibility of Locator("div[aria-label='Dropdown panel']")
+2023-04-21T10:03:11.405Z pw:api waiting for GetByText("A Datum Corporation")
+2023-04-21T10:03:11.869Z pw:api   locator resolved to <span class="pa-si ">A Datum Corporation</span>
+2023-04-21T10:03:11.873Z pw:api attempting click action
+2023-04-21T10:03:11.873Z pw:api   waiting for element to be visible, enabled and stable
+2023-04-21T10:03:11.898Z pw:api   element is visible, enabled and stable
+2023-04-21T10:03:11.898Z pw:api   scrolling into view if needed
+2023-04-21T10:03:11.899Z pw:api   done scrolling
+2023-04-21T10:03:11.903Z pw:api   performing click action
+2023-04-21T10:03:11.913Z pw:api   click action done
+2023-04-21T10:03:11.913Z pw:api   waiting for scheduled navigations to finish
+2023-04-21T10:03:11.962Z pw:api   navigations have finished
+2023-04-21T10:03:11.964Z pw:api waiting for Locator("button[aria-label='Save (CTRL+S)']")
+2023-04-21T10:03:12.071Z pw:api   locator resolved to <button tabindex="0" type="button" role="menuitem" aria-ÔÇª>ÔÇª</button>
+2023-04-21T10:03:12.072Z pw:api attempting click action
+2023-04-21T10:03:12.072Z pw:api   waiting for element to be visible, enabled and stable
+2023-04-21T10:03:12.136Z pw:api   element is visible, enabled and stable
+2023-04-21T10:03:12.136Z pw:api   scrolling into view if needed
+2023-04-21T10:03:12.137Z pw:api   done scrolling
+2023-04-21T10:03:12.140Z pw:api   performing click action
+2023-04-21T10:03:12.165Z pw:api   click action done
+2023-04-21T10:03:12.165Z pw:api   waiting for scheduled navigations to finish
+2023-04-21T10:03:12.166Z pw:api   navigations have finished
+2023-04-21T10:03:18.186Z pw:api waiting for Locator("div[title='Accounts']")
+2023-04-21T10:03:18.192Z pw:api   locator resolved to <div title="Accounts" role="presentation" class="pa-aÔÇª>ÔÇª</div>
+2023-04-21T10:03:18.195Z pw:api attempting click action
+2023-04-21T10:03:18.195Z pw:api   waiting for element to be visible, enabled and stable
+2023-04-21T10:03:18.230Z pw:api   element is visible, enabled and stable
+2023-04-21T10:03:18.230Z pw:api   scrolling into view if needed
+2023-04-21T10:03:18.231Z pw:api   done scrolling
+2023-04-21T10:03:18.235Z pw:api   performing click action
+2023-04-21T10:03:18.259Z pw:api   navigated to "https://org2b94446f.crm4.dynamics.com/main.aspx?appid=0a08bd1e-54c5-ed11-b597-000d3a4755c6&pagetype=entitylist&etn=account"
+2023-04-21T10:03:18.264Z pw:api   navigated to "https://org2b94446f.crm4.dynamics.com/main.aspx?appid=0a08bd1e-54c5-ed11-b597-000d3a4755c6&pagetype=entitylist&etn=account"
+2023-04-21T10:03:18.275Z pw:api   click action done
+2023-04-21T10:03:18.275Z pw:api   waiting for scheduled navigations to finish
+2023-04-21T10:03:18.282Z pw:api   navigated to "https://org2b94446f.crm4.dynamics.com/uclient/blank.htm?v=1.4.5574-2303.3"
+2023-04-21T10:03:18.284Z pw:api   navigations have finished
+2023-04-21T10:03:18.287Z pw:api waiting for Locator("input[aria-label*='Filter by keyword']")
+2023-04-21T10:03:18.303Z pw:api   navigated to "https://org2b94446f.crm4.dynamics.com/main.aspx?appid=0a08bd1e-54c5-ed11-b597-000d3a4755c6&pagetype=entitylist&etn=account"
+2023-04-21T10:03:18.305Z pw:api   navigated to "https://org2b94446f.crm4.dynamics.com/main.aspx?appid=0a08bd1e-54c5-ed11-b597-000d3a4755c6&pagetype=entitylist&etn=account"
+2023-04-21T10:03:18.323Z pw:api   navigated to "https://org2b94446f.crm4.dynamics.com/main.aspx?appid=0a08bd1e-54c5-ed11-b597-000d3a4755c6&pagetype=entitylist&etn=account&viewid=00000000-0000-0000-00aa-000010001001&viewType=1039"
+2023-04-21T10:03:18.404Z pw:api   locator resolved to <input title="" value="" type="text" autocomplete="off"ÔÇª/>
+2023-04-21T10:03:18.408Z pw:api attempting click action
+2023-04-21T10:03:18.408Z pw:api   waiting for element to be visible, enabled and stable
+2023-04-21T10:03:18.996Z pw:api   element is visible, enabled and stable
+2023-04-21T10:03:18.996Z pw:api   scrolling into view if needed
+2023-04-21T10:03:19.010Z pw:api   done scrolling
+2023-04-21T10:03:19.018Z pw:api   performing click action
+2023-04-21T10:03:19.057Z pw:api   click action done
+2023-04-21T10:03:19.057Z pw:api   waiting for scheduled navigations to finish
+2023-04-21T10:03:19.058Z pw:api   navigations have finished
+2023-04-21T10:03:19.063Z pw:api waiting for Locator("input[aria-label*='Filter by keyword']")
+2023-04-21T10:03:19.071Z pw:api   locator resolved to <input title="" value="" type="text" autocomplete="off"ÔÇª/>
+2023-04-21T10:03:19.072Z pw:api elementHandle.fill("Ela-Example1")
+2023-04-21T10:03:19.072Z pw:api   waiting for element to be visible, enabled and editable
+2023-04-21T10:03:19.079Z pw:api   element is visible, enabled and editable
+2023-04-21T10:03:19.117Z pw:api waiting for Locator("button[aria-label='Start search']")
+2023-04-21T10:03:19.122Z pw:api   locator resolved to <button tabindex="0" type="button" title="Start search" ÔÇª>ÔÇª</button>
+2023-04-21T10:03:19.124Z pw:api attempting click action
+2023-04-21T10:03:19.124Z pw:api   waiting for element to be visible, enabled and stable
+2023-04-21T10:03:19.153Z pw:api   element is visible, enabled and stable
+2023-04-21T10:03:19.153Z pw:api   scrolling into view if needed
+2023-04-21T10:03:19.153Z pw:api   done scrolling
+2023-04-21T10:03:19.157Z pw:api   performing click action
+2023-04-21T10:03:19.175Z pw:api   navigated to "https://org2b94446f.crm4.dynamics.com/main.aspx?appid=0a08bd1e-54c5-ed11-b597-000d3a4755c6&pagetype=entitylist&etn=account&viewid=00000000-0000-0000-00aa-000010001001&viewType=1039"
+2023-04-21T10:03:19.231Z pw:api   navigated to "https://org2b94446f.crm4.dynamics.com/main.aspx?appid=0a08bd1e-54c5-ed11-b597-000d3a4755c6&pagetype=entitylist&etn=account&viewid=00000000-0000-0000-00aa-000010001001&viewType=1039"
+2023-04-21T10:03:19.239Z pw:api   navigated to "https://org2b94446f.crm4.dynamics.com/main.aspx?appid=0a08bd1e-54c5-ed11-b597-000d3a4755c6&pagetype=entitylist&etn=account&viewid=00000000-0000-0000-00aa-000010001001&viewType=1039"
+2023-04-21T10:03:19.263Z pw:api   click action done
+2023-04-21T10:03:19.263Z pw:api   waiting for scheduled navigations to finish
+2023-04-21T10:03:19.305Z pw:api   navigated to "https://org2b94446f.crm4.dynamics.com/main.aspx?appid=0a08bd1e-54c5-ed11-b597-000d3a4755c6&pagetype=entitylist&etn=account&viewid=00000000-0000-0000-00aa-000010001001&viewType=1039"
+2023-04-21T10:03:19.314Z pw:api   navigated to "https://org2b94446f.crm4.dynamics.com/main.aspx?appid=0a08bd1e-54c5-ed11-b597-000d3a4755c6&pagetype=entitylist&etn=account&viewid=00000000-0000-0000-00aa-000010001001&viewType=1039"
+2023-04-21T10:03:19.524Z pw:api   navigations have finished
+2023-04-21T10:03:19.533Z pw:api waiting for Locator("xpath=//span[text()='Ela-Example1']")
+2023-04-21T10:03:22.047Z pw:api   navigated to "https://org2b94446f.crm4.dynamics.com/main.aspx?appid=0a08bd1e-54c5-ed11-b597-000d3a4755c6&pagetype=entitylist&etn=account&viewid=00000000-0000-0000-00aa-000010001001&viewType=1039"
+2023-04-21T10:03:22.074Z pw:api   navigated to "https://org2b94446f.crm4.dynamics.com/main.aspx?appid=0a08bd1e-54c5-ed11-b597-000d3a4755c6&pagetype=entitylist&etn=account&viewid=00000000-0000-0000-00aa-000010001001&viewType=1039"
+2023-04-21T10:03:22.081Z pw:api   navigated to "https://org2b94446f.crm4.dynamics.com/main.aspx?appid=0a08bd1e-54c5-ed11-b597-000d3a4755c6&pagetype=entitylist&etn=account&viewid=00000000-0000-0000-00aa-000010001001&viewType=1039"
+2023-04-21T10:03:22.130Z pw:api   navigated to "https://org2b94446f.crm4.dynamics.com/uclient/blank.htm?v=1.4.5574-2303.3"
+2023-04-21T10:03:22.161Z pw:api   navigated to "https://org2b94446f.crm4.dynamics.com/main.aspx?appid=0a08bd1e-54c5-ed11-b597-000d3a4755c6&pagetype=entitylist&etn=account&viewid=00000000-0000-0000-00aa-000010001001&viewType=1039"
+2023-04-21T10:03:22.164Z pw:api   navigated to "https://org2b94446f.crm4.dynamics.com/main.aspx?appid=0a08bd1e-54c5-ed11-b597-000d3a4755c6&pagetype=entitylist&etn=account&viewid=00000000-0000-0000-00aa-000010001001&viewType=1039"
+2023-04-21T10:03:23.305Z pw:api   navigated to "https://org2b94446f.crm4.dynamics.com/main.aspx?appid=0a08bd1e-54c5-ed11-b597-000d3a4755c6&pagetype=entitylist&etn=account&viewid=00000000-0000-0000-00aa-000010001001&viewType=1039"
+2023-04-21T10:03:23.347Z pw:api   navigated to "https://org2b94446f.crm4.dynamics.com/main.aspx?appid=0a08bd1e-54c5-ed11-b597-000d3a4755c6&pagetype=entitylist&etn=account&viewid=00000000-0000-0000-00aa-000010001001&viewType=1039"
+2023-04-21T10:03:23.354Z pw:api   navigated to "https://org2b94446f.crm4.dynamics.com/main.aspx?appid=0a08bd1e-54c5-ed11-b597-000d3a4755c6&pagetype=entitylist&etn=account&viewid=00000000-0000-0000-00aa-000010001001&viewType=1039"
+2023-04-21T10:03:23.429Z pw:api   navigated to "https://org2b94446f.crm4.dynamics.com/main.aspx?appid=0a08bd1e-54c5-ed11-b597-000d3a4755c6&pagetype=entitylist&etn=account&viewid=00000000-0000-0000-00aa-000010001001&viewType=1039"
+2023-04-21T10:03:23.433Z pw:api   navigated to "https://org2b94446f.crm4.dynamics.com/main.aspx?appid=0a08bd1e-54c5-ed11-b597-000d3a4755c6&pagetype=entitylist&etn=account&viewid=00000000-0000-0000-00aa-000010001001&viewType=1039"
+2023-04-21T10:03:23.996Z pw:api   locator resolved to <span role="presentation" class="spanWrapper-291">Ela-Example1</span>
+2023-04-21T10:03:23.997Z pw:api attempting click action
+2023-04-21T10:03:23.997Z pw:api   waiting for element to be visible, enabled and stable
+2023-04-21T10:03:24.012Z pw:api   element is visible, enabled and stable
+2023-04-21T10:03:24.012Z pw:api   scrolling into view if needed
+2023-04-21T10:03:24.012Z pw:api   done scrolling
+2023-04-21T10:03:24.015Z pw:api   performing click action
+2023-04-21T10:03:24.048Z pw:api   navigated to "https://org2b94446f.crm4.dynamics.com/main.aspx?appid=0a08bd1e-54c5-ed11-b597-000d3a4755c6&pagetype=entityrecord&etn=account&id=8cd544b5-2be0-ed11-a7c5-002248835b02"
+2023-04-21T10:03:24.052Z pw:api   navigated to "https://org2b94446f.crm4.dynamics.com/main.aspx?appid=0a08bd1e-54c5-ed11-b597-000d3a4755c6&pagetype=entityrecord&etn=account&id=8cd544b5-2be0-ed11-a7c5-002248835b02"
+2023-04-21T10:03:24.055Z pw:api   navigated to "https://org2b94446f.crm4.dynamics.com/main.aspx?appid=0a08bd1e-54c5-ed11-b597-000d3a4755c6&pagetype=entityrecord&etn=account&id=8cd544b5-2be0-ed11-a7c5-002248835b02"
+2023-04-21T10:03:24.059Z pw:api   navigated to "https://org2b94446f.crm4.dynamics.com/main.aspx?appid=0a08bd1e-54c5-ed11-b597-000d3a4755c6&pagetype=entityrecord&etn=account&id=8cd544b5-2be0-ed11-a7c5-002248835b02"
+2023-04-21T10:03:24.063Z pw:api   navigated to "https://org2b94446f.crm4.dynamics.com/main.aspx?appid=0a08bd1e-54c5-ed11-b597-000d3a4755c6&pagetype=entityrecord&etn=account&id=8cd544b5-2be0-ed11-a7c5-002248835b02"
+2023-04-21T10:03:24.105Z pw:api   click action done
+2023-04-21T10:03:24.105Z pw:api   waiting for scheduled navigations to finish
+2023-04-21T10:03:24.113Z pw:api   navigations have finished
+2023-04-21T10:03:24.118Z pw:api waiting for Locator("input[aria-label='Account Name']")
+2023-04-21T10:03:25.328Z pw:api   locator resolved to <input type="text" placeholder="" maxlength="160" autocÔÇª/>
+2023-04-21T10:03:25.332Z pw:api waiting for Locator("button[aria-label*='More commands for']")
+2023-04-21T10:03:26.343Z pw:api   locator resolved to <button tabindex="-1" type="button" role="menuitem" ariaÔÇª>ÔÇª</button>
+2023-04-21T10:03:26.346Z pw:api attempting click action
+2023-04-21T10:03:26.346Z pw:api   waiting for element to be visible, enabled and stable
+2023-04-21T10:03:26.380Z pw:api   element is visible, enabled and stable
+2023-04-21T10:03:26.380Z pw:api   scrolling into view if needed
+2023-04-21T10:03:26.380Z pw:api   done scrolling
+2023-04-21T10:03:26.384Z pw:api   performing click action
+2023-04-21T10:03:26.485Z pw:api   click action done
+2023-04-21T10:03:26.485Z pw:api   waiting for scheduled navigations to finish
+2023-04-21T10:03:26.488Z pw:api   navigations have finished
+2023-04-21T10:03:26.491Z pw:api waiting for Locator("button[aria-label='Delete']")
+2023-04-21T10:03:26.506Z pw:api   locator resolved to <button tabindex="-1" type="button" role="menuitem" ariaÔÇª>ÔÇª</button>
+2023-04-21T10:03:26.517Z pw:api attempting click action
+2023-04-21T10:03:26.517Z pw:api   waiting for element to be visible, enabled and stable
+2023-04-21T10:03:26.664Z pw:api   element is visible, enabled and stable
+2023-04-21T10:03:26.664Z pw:api   scrolling into view if needed
+2023-04-21T10:03:26.665Z pw:api   done scrolling
+2023-04-21T10:03:26.669Z pw:api   performing click action
+2023-04-21T10:03:26.698Z pw:api   click action done
+2023-04-21T10:03:26.698Z pw:api   waiting for scheduled navigations to finish
+2023-04-21T10:03:26.797Z pw:api   navigations have finished
+2023-04-21T10:03:26.800Z pw:api waiting for Locator("button[data-id='confirmButton']")
+2023-04-21T10:03:26.822Z pw:api   locator resolved to <button tabindex="0" type="button" aria-label="Delete" iÔÇª>ÔÇª</button>
+2023-04-21T10:03:26.823Z pw:api attempting click action
+2023-04-21T10:03:26.823Z pw:api   waiting for element to be visible, enabled and stable
+2023-04-21T10:03:26.888Z pw:api   element is visible, enabled and stable
+2023-04-21T10:03:26.888Z pw:api   scrolling into view if needed
+2023-04-21T10:03:26.889Z pw:api   done scrolling
+2023-04-21T10:03:26.892Z pw:api   performing click action
+2023-04-21T10:03:26.916Z pw:api   click action done
+2023-04-21T10:03:26.916Z pw:api   waiting for scheduled navigations to finish
+2023-04-21T10:03:27.027Z pw:api   navigations have finished
+2023-04-21T10:03:28.899Z pw:api   navigated to "about:blank"

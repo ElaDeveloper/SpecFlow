@@ -1,0 +1,19 @@
+{
+  "configEntities": {
+    "environmentINT": {
+      "url": "https://org2b94446f.crm4.dynamics.com/main.aspx",
+      "userName": "admin@CRM253142.onmicrosoft.com",
+      "password": "^9eM(LFc872yK$~s"
+    },
+    "environmentSIT": {
+      "url": "https://org2b94446f.crm4.dynamics.com/main.aspx",
+      "userName": "admin@CRM253142.onmicrosoft.com",
+      "password": "^9eM(LFc872yK$~s"
+    }
+  },
+  "configKeys": {
+    "environmentName": "environmentINT",
+    "browserType": "chrome",
+    "defaultTimeout": "60000"
+  }
+}

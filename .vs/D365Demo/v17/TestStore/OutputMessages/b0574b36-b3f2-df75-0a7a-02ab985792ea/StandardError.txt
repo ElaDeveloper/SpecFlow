@@ -1,0 +1,74 @@
+2023-04-17T15:20:39.916Z pw:api   navigated to "about:blank"
+2023-04-17T15:20:39.917Z pw:api   navigated to "about:blank"
+2023-04-17T15:20:39.975Z pw:api navigating to "https://webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html", waiting until "load"
+2023-04-17T15:20:40.260Z pw:api   "commit" event fired
+2023-04-17T15:20:40.261Z pw:api   navigated to "https://webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html"
+2023-04-17T15:20:40.464Z pw:api   "domcontentloaded" event fired
+2023-04-17T15:20:40.721Z pw:api   "load" event fired
+2023-04-17T15:20:40.780Z pw:api waiting for GetByRole(AriaRole.Checkbox).First
+2023-04-17T15:20:40.791Z pw:api   locator resolved to <input type="checkbox" value="option-1"/>
+2023-04-17T15:20:40.795Z pw:api attempting click action
+2023-04-17T15:20:40.796Z pw:api   waiting for element to be visible, enabled and stable
+2023-04-17T15:20:40.825Z pw:api   element is visible, enabled and stable
+2023-04-17T15:20:40.825Z pw:api   scrolling into view if needed
+2023-04-17T15:20:40.827Z pw:api   done scrolling
+2023-04-17T15:20:40.835Z pw:api   performing click action
+2023-04-17T15:20:40.866Z pw:api   click action done
+2023-04-17T15:20:40.866Z pw:api   waiting for scheduled navigations to finish
+2023-04-17T15:20:40.866Z pw:api   navigations have finished
+2023-04-17T15:20:40.884Z pw:api waiting for GetByRole(AriaRole.Checkbox).Nth(1)
+2023-04-17T15:20:40.895Z pw:api   locator resolved to <input type="checkbox" value="option-2"/>
+2023-04-17T15:20:40.898Z pw:api attempting click action
+2023-04-17T15:20:40.898Z pw:api   waiting for element to be visible, enabled and stable
+2023-04-17T15:20:40.922Z pw:api   element is visible, enabled and stable
+2023-04-17T15:20:40.922Z pw:api   scrolling into view if needed
+2023-04-17T15:20:40.923Z pw:api   done scrolling
+2023-04-17T15:20:40.928Z pw:api   performing click action
+2023-04-17T15:20:40.941Z pw:api   click action done
+2023-04-17T15:20:40.942Z pw:api   waiting for scheduled navigations to finish
+2023-04-17T15:20:40.942Z pw:api   navigations have finished
+2023-04-17T15:20:40.944Z pw:api waiting for GetByRole(AriaRole.Checkbox).Nth(2)
+2023-04-17T15:20:40.953Z pw:api   locator resolved to <input checked type="checkbox" value="option-3"/>
+2023-04-17T15:20:40.956Z pw:api attempting click action
+2023-04-17T15:20:40.956Z pw:api   waiting for element to be visible, enabled and stable
+2023-04-17T15:20:40.973Z pw:api   element is visible, enabled and stable
+2023-04-17T15:20:40.973Z pw:api   scrolling into view if needed
+2023-04-17T15:20:40.974Z pw:api   done scrolling
+2023-04-17T15:20:40.979Z pw:api   performing click action
+2023-04-17T15:20:40.991Z pw:api   click action done
+2023-04-17T15:20:40.992Z pw:api   waiting for scheduled navigations to finish
+2023-04-17T15:20:40.992Z pw:api   navigations have finished
+2023-04-17T15:20:40.994Z pw:api waiting for GetByRole(AriaRole.Checkbox).Nth(3)
+2023-04-17T15:20:40.999Z pw:api   locator resolved to <input type="checkbox" value="option-4"/>
+2023-04-17T15:20:41.004Z pw:api attempting click action
+2023-04-17T15:20:41.004Z pw:api   waiting for element to be visible, enabled and stable
+2023-04-17T15:20:41.024Z pw:api   element is visible, enabled and stable
+2023-04-17T15:20:41.024Z pw:api   scrolling into view if needed
+2023-04-17T15:20:41.026Z pw:api   done scrolling
+2023-04-17T15:20:41.031Z pw:api   performing click action
+2023-04-17T15:20:41.042Z pw:api   click action done
+2023-04-17T15:20:41.042Z pw:api   waiting for scheduled navigations to finish
+2023-04-17T15:20:41.042Z pw:api   navigations have finished
+2023-04-17T15:20:41.120Z pw:api navigating to "https://webdriveruniversity.com/Contact-Us/contactus.html", waiting until "load"
+2023-04-17T15:20:41.175Z pw:api   "commit" event fired
+2023-04-17T15:20:41.175Z pw:api   navigated to "https://webdriveruniversity.com/Contact-Us/contactus.html"
+2023-04-17T15:20:41.278Z pw:api   "domcontentloaded" event fired
+2023-04-17T15:20:41.289Z pw:api   "load" event fired
+2023-04-17T15:20:41.308Z pw:api waiting for Locator("input[value='SUBMIT']")
+2023-04-17T15:20:41.339Z pw:api   locator resolved to visible <input type="submit" value="SUBMIT" class="contact_buttÔÇª/>
+2023-04-17T15:20:41.388Z pw:api navigating to "https://webdriveruniversity.com/Contact-Us/contactus.html", waiting until "load"
+2023-04-17T15:20:41.416Z pw:api   "commit" event fired
+2023-04-17T15:20:41.416Z pw:api   navigated to "https://webdriveruniversity.com/Contact-Us/contactus.html"
+2023-04-17T15:20:41.465Z pw:api   "domcontentloaded" event fired
+2023-04-17T15:20:41.466Z pw:api   "load" event fired
+2023-04-17T15:20:41.472Z pw:api waiting for GetByRole(AriaRole.Textbox).First
+2023-04-17T15:20:41.508Z pw:api   locator resolved to <input type="text" name="first_name" class="feedback-inÔÇª/>
+2023-04-17T15:20:41.511Z pw:api elementHandle.fill("Hello")
+2023-04-17T15:20:41.512Z pw:api   waiting for element to be visible, enabled and editable
+2023-04-17T15:20:41.527Z pw:api   element is visible, enabled and editable
+2023-04-17T15:20:41.532Z pw:api waiting for GetByRole(AriaRole.Textbox).First
+2023-04-17T15:20:41.542Z pw:api   locator resolved to <input type="text" name="first_name" class="feedback-inÔÇª/>
+2023-04-17T15:20:41.544Z pw:api elementHandle.fill("")
+2023-04-17T15:20:41.544Z pw:api   waiting for element to be visible, enabled and editable
+2023-04-17T15:20:41.556Z pw:api   element is visible, enabled and editable
+2023-04-17T15:20:42.033Z pw:api   "networkidle" event fired

@@ -1,0 +1,15 @@
+{
+  "CaseTitle": "Example-Case-1",
+  "Subject": "Products",
+  "CustomerName": "A. Datum Corporation (sample)",
+  "Origin": "Email",
+  "ContactEmail": "someone_i@example.com",
+  "ContactName": "Rene Valdes (sample)",
+  "Satisfaction": "Very Satisfied",
+  "Product": "ArmBand Install (Flat Hourly Rate)",
+  "Description": "Hi, This is just a test case generated through Playwright Automation tool",
+  "CaseId": "CAS-01056-G2Q1Z0",
+  "QueueName": "Default entity queue",
+  "AssigneeType": "User or team",
+  "AssigneeTeamName": "# AIBuilder_StructuredML_Prod_CDS"
+}

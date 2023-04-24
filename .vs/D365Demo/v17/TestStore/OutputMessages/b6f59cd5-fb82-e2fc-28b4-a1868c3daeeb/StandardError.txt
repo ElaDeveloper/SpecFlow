@@ -1,0 +1,77 @@
+2023-04-15T19:09:19.881Z pw:api   navigated to "about:blank"
+2023-04-15T19:09:19.882Z pw:api   navigated to "about:blank"
+2023-04-15T19:09:19.944Z pw:api navigating to "https://webdriveruniversity.com/Actions/index.html", waiting until "load"
+2023-04-15T19:09:20.194Z pw:api   "commit" event fired
+2023-04-15T19:09:20.195Z pw:api   navigated to "https://webdriveruniversity.com/Actions/index.html"
+2023-04-15T19:09:20.427Z pw:api   "domcontentloaded" event fired
+2023-04-15T19:09:20.621Z pw:api   "load" event fired
+2023-04-15T19:09:20.635Z pw:api waiting for GetByText("Hover Over Me First!")
+2023-04-15T19:09:20.678Z pw:api   locator resolved to <button class="dropbtn">Hover Over Me First!</button>
+2023-04-15T19:09:20.683Z pw:api attempting click action
+2023-04-15T19:09:20.683Z pw:api   waiting for element to be visible, enabled and stable
+2023-04-15T19:09:20.711Z pw:api   element is visible, enabled and stable
+2023-04-15T19:09:20.711Z pw:api   scrolling into view if needed
+2023-04-15T19:09:20.713Z pw:api   done scrolling
+2023-04-15T19:09:20.724Z pw:api   performing click action
+2023-04-15T19:09:20.752Z pw:api   click action done
+2023-04-15T19:09:20.752Z pw:api   waiting for scheduled navigations to finish
+2023-04-15T19:09:20.752Z pw:api   navigations have finished
+2023-04-15T19:09:20.768Z pw:api waiting for Locator("#double-click")
+2023-04-15T19:09:20.780Z pw:api   locator resolved to <div id="double-click" class="div-double-click">ÔÇª</div>
+2023-04-15T19:09:20.798Z pw:api attempting dblclick action
+2023-04-15T19:09:20.798Z pw:api   waiting for element to be visible, enabled and stable
+2023-04-15T19:09:20.828Z pw:api   element is visible, enabled and stable
+2023-04-15T19:09:20.828Z pw:api   scrolling into view if needed
+2023-04-15T19:09:20.829Z pw:api   done scrolling
+2023-04-15T19:09:20.834Z pw:api   performing dblclick action
+2023-04-15T19:09:20.865Z pw:api   dblclick action done
+2023-04-15T19:09:20.865Z pw:api   waiting for scheduled navigations to finish
+2023-04-15T19:09:20.865Z pw:api   navigations have finished
+2023-04-15T19:09:20.879Z pw:api waiting for Locator("#double-click")
+2023-04-15T19:09:20.885Z pw:api   locator resolved to <div id="double-click" class="div-double-click double">ÔÇª</div>
+2023-04-15T19:09:20.889Z pw:api attempting click action
+2023-04-15T19:09:20.889Z pw:api   waiting for element to be visible, enabled and stable
+2023-04-15T19:09:20.909Z pw:api   element is visible, enabled and stable
+2023-04-15T19:09:20.909Z pw:api   scrolling into view if needed
+2023-04-15T19:09:20.910Z pw:api   done scrolling
+2023-04-15T19:09:20.915Z pw:api   performing click action
+2023-04-15T19:09:20.981Z pw:api   click action done
+2023-04-15T19:09:20.981Z pw:api   waiting for scheduled navigations to finish
+2023-04-15T19:09:20.981Z pw:api   navigations have finished
+2023-04-15T19:09:20.993Z pw:api waiting for Locator("#double-click")
+2023-04-15T19:09:20.998Z pw:api   locator resolved to <div id="double-click" class="div-double-click double">ÔÇª</div>
+2023-04-15T19:09:21.000Z pw:api attempting click action
+2023-04-15T19:09:21.000Z pw:api   waiting for element to be visible, enabled and stable
+2023-04-15T19:09:21.027Z pw:api   element is visible, enabled and stable
+2023-04-15T19:09:21.027Z pw:api   scrolling into view if needed
+2023-04-15T19:09:21.028Z pw:api   done scrolling
+2023-04-15T19:09:21.036Z pw:api   performing click action
+2023-04-15T19:09:21.063Z pw:api   click action done
+2023-04-15T19:09:21.063Z pw:api   waiting for scheduled navigations to finish
+2023-04-15T19:09:21.063Z pw:api   navigations have finished
+2023-04-15T19:09:21.069Z pw:api waiting for GetByText("Hover Over Me Third!")
+2023-04-15T19:09:21.081Z pw:api   locator resolved to <button class="dropbtn">Hover Over Me Third!</button>
+2023-04-15T19:09:21.085Z pw:api attempting hover action
+2023-04-15T19:09:21.085Z pw:api   waiting for element to be visible and stable
+2023-04-15T19:09:21.107Z pw:api   element is visible and stable
+2023-04-15T19:09:21.107Z pw:api   scrolling into view if needed
+2023-04-15T19:09:21.109Z pw:api   done scrolling
+2023-04-15T19:09:21.115Z pw:api   performing hover action
+2023-04-15T19:09:21.123Z pw:api   hover action done
+2023-04-15T19:09:21.123Z pw:api   waiting for scheduled navigations to finish
+2023-04-15T19:09:21.124Z pw:api   navigations have finished
+2023-04-15T19:09:21.126Z pw:api waiting for GetByText("Hover Over Me First!")
+2023-04-15T19:09:21.133Z pw:api   locator resolved to <button class="dropbtn">Hover Over Me First!</button>
+2023-04-15T19:09:21.135Z pw:api attempting click action
+2023-04-15T19:09:21.135Z pw:api   waiting for element to be visible, enabled and stable
+2023-04-15T19:09:21.142Z pw:api     forcing action
+2023-04-15T19:09:21.147Z pw:api   element is visible, enabled and stable
+2023-04-15T19:09:21.147Z pw:api   scrolling into view if needed
+2023-04-15T19:09:21.148Z pw:api   done scrolling
+2023-04-15T19:09:21.151Z pw:api   performing click action
+2023-04-15T19:09:21.158Z pw:api   click action done
+2023-04-15T19:09:21.159Z pw:api   waiting for scheduled navigations to finish
+2023-04-15T19:09:21.159Z pw:api   navigations have finished
+2023-04-15T19:09:21.214Z pw:api waiting for GetByText("Hover Over Me First!")
+2023-04-15T19:09:21.255Z pw:api   locator resolved to <button class="dropbtn">Hover Over Me First!</button>
+2023-04-15T19:09:21.333Z pw:api   "networkidle" event fired

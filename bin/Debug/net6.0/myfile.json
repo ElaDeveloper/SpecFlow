@@ -1,0 +1,11 @@
+{
+  "CaseTitle": "Example-Case-1",
+  "Subject": "Products",
+  "CustomerName": "A. Datum Corporation (sample)",
+  "Origin": "Email",
+  "ContactName": "someone_i@example.com",
+  "Satisfaction": "Very Satisfied",
+  "Product": "ArmBand Install (Flat Hourly Rate)",
+  "Description": "Hi, This is just a test case generated through Playwright Automation tool",
+  "CaseId": "1234"
+}
