@@ -20,13 +20,3 @@ jobs:
                 script: |
                   npm ci
                   npx playwright test
-            - task: PublishTestResults@2
-              displayName: 'Publish test results'
-              inputs:
-                searchFolder: 'C:/Ela/PlayWright/test-results'
-                testResultsFormat: 'JUnit'
-                testResultsFiles: 'e2e-junit-results.xml' 
-                mergeTestResults: true
-                failTaskOnFailedTests: true
-                testRunTitle: 'My End-To-End Tests'
-              condition: succeededOrFailed()
