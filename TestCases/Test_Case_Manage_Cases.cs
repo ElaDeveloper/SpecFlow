@@ -11,6 +11,7 @@ using D365Demo.TestData;
 using D365Demo.Utilities;
 using Microsoft.Playwright.NUnit;
 using NUnit.Framework;
+using Microsoft.VisualBasic;
 
 namespace D365Demo.TestCases
 {
@@ -30,11 +31,12 @@ namespace D365Demo.TestCases
             iPage = Page;
             pageObjectCaseEntity = new PageObjectCaseEntity(iPage);
             pageObjectAccountEntity = new PageObjectAccountEntity(iPage);
-            filePath = "C:\\Ela\\PlayWright\\SpecFlowLearn\\TestData\\JsonFiles\\Cases.json";
+            formatJsonFile = new FormatJsonFile();
+            String MyProjectDir = formatJsonFile.DirProject();
+            filePath = MyProjectDir + "\\TestData\\JsonFiles\\Cases.json";
             String inputFilePath = File.ReadAllText(filePath);
             caseData = JsonSerializer.Deserialize<Test_Data_Cases>(inputFilePath);
             test_Case_Manage_Accounts = new Test_Case_Manage_Accounts(iPage);
-            formatJsonFile = new FormatJsonFile();
         }
 
         public async Task SelectSubject(String subject)

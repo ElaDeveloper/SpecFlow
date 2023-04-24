@@ -2,6 +2,7 @@
 using D365Demo.Drivers;
 using D365Demo.PageObjects;
 using D365Demo.TestData;
+using D365Demo.Utilities;
 using Dynamitey.DynamicObjects;
 using Microsoft.Playwright;
 using NUnit.Framework;
@@ -17,12 +18,16 @@ namespace D365Demo.TestCases
         private readonly PageObjectAccountEntity pageObjectAccountEntity;
         private readonly Test_Data_Accounts? accountsData;
         private readonly IPage Page;
+        private readonly FormatJsonFile formatJsonFile;
 
         public Test_Case_Manage_Accounts(IPage Page)
         {
             this.Page = Page;
+            formatJsonFile = new FormatJsonFile();
+            String MyProjectDir = formatJsonFile.DirProject();
+            String filePath = MyProjectDir + "\\TestData\\JsonFiles\\Cases.json";
             pageObjectAccountEntity = new PageObjectAccountEntity(Page);
-            string text = File.ReadAllText("C:\\Ela\\PlayWright\\SpecFlowLearn\\TestData\\JsonFiles\\Accounts.json");
+            string text = File.ReadAllText(filePath);
             accountsData = JsonSerializer.Deserialize<Test_Data_Accounts>(text);
         }
 

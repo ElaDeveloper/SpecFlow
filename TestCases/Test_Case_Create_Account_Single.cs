@@ -66,5 +66,28 @@ namespace D365Demo.TestCases
             Thread.Sleep(3000);
             await browser.CloseAsync();
         }
+
+        public String DirProject()
+        {
+            String DirDebug = System.IO.Directory.GetCurrentDirectory();
+            String DirProject = DirDebug;
+
+            for (int counter_slash = 0; counter_slash < 3; counter_slash++)
+            {
+                DirProject = DirProject.Substring(0, DirProject.LastIndexOf(@"\"));
+            }
+
+            return DirProject;
+        }
+
+        [Test]
+        public void ExamplePath()
+        {
+            Console.WriteLine("Hello path");
+            String MyProjectDir = DirProject();
+            String filePath = MyProjectDir + "\\TestData\\JsonFiles\\Cases.json";
+            String inputFilePath = File.ReadAllText(filePath);
+            Console.WriteLine("Hello1123 - " + inputFilePath);            
+        }
     }
 }

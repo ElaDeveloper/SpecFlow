@@ -34,7 +34,19 @@ namespace D365Demo.Utilities
             File.WriteAllText(filePath, updatedJsonString);
             Console.WriteLine(updatedJsonString);
         }
-        
+        public String DirProject()
+        {
+            String DirDebug = System.IO.Directory.GetCurrentDirectory();
+            String DirProject = DirDebug;
+
+            for (int counter_slash = 0; counter_slash < 3; counter_slash++)
+            {
+                DirProject = DirProject.Substring(0, DirProject.LastIndexOf(@"\"));
+            }
+
+            return DirProject;
+        }
+
         [Test]
         public void Test()
         {
