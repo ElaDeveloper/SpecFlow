@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "\\Features",
+    "\\Hooks",
+    "\\PageObjects",
+    "\\StepDefinitions",
+    "\\TestCases",
+    "\\Utilities"
+  ],
+  "PreviewInSolutionExplorer": false
+}
