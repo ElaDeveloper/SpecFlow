@@ -25,7 +25,7 @@ namespace D365Demo.TestCases
             this.Page = Page;
             formatJsonFile = new FormatJsonFile();
             String MyProjectDir = formatJsonFile.DirProject();
-            String filePath = MyProjectDir + "\\TestData\\JsonFiles\\Cases.json";
+            String filePath = MyProjectDir + "\\TestData\\JsonFiles\\Accounts.json";
             pageObjectAccountEntity = new PageObjectAccountEntity(Page);
             string text = File.ReadAllText(filePath);
             accountsData = JsonSerializer.Deserialize<Test_Data_Accounts>(text);

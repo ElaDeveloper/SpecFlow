@@ -47,7 +47,7 @@ namespace D365Demo.Utilities
             return DirProject;
         }
 
-        [Test]
+        //[Test]
         public void Test()
         {
             //updateJsonFile("C:\\Ela\\PlayWright\\SpecFlowLearn\\TestData\\JsonFiles\\Cases.json", "CaseId", "123456789");

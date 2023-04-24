@@ -55,7 +55,7 @@ namespace D365Demo.Utilities
             await test_Case_Manage_Accounts.NavigateToSalesHubApp();
         }
 
-        [Test]
+        //[Test]
         public async Task ManageCase()
         {
             Console.WriteLine("Executing creating case scenario");

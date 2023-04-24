@@ -80,7 +80,7 @@ namespace D365Demo.TestCases
             return DirProject;
         }
 
-        [Test]
+       // [Test]
         public void ExamplePath()
         {
             Console.WriteLine("Hello path");
