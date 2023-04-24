@@ -10,7 +10,7 @@ pool:
   vmImage: 'windows-latest'
 
 variables:
-  solution: 'C://Ela//PlayWright//SpecFlowLearn//*.sln'
+  solution: 'C://Ela//PlayWright//SpecFlowLearn//D365Demo.sln'
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
 
