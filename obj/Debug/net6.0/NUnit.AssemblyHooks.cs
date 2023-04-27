@@ -9,13 +9,13 @@ using global::System.Runtime.CompilerServices;
 
 [GeneratedCode("SpecFlow", "3.9.74")]
 [SetUpFixture]
-public class D365Demo_NUnitAssemblyHooks
+public class SpecFlowDemo_NUnitAssemblyHooks
 {
     [OneTimeSetUp]
     [MethodImpl(MethodImplOptions.NoInlining)]
     public void AssemblyInitialize()
     {
-        var currentAssembly = typeof(D365Demo_NUnitAssemblyHooks).Assembly;
+        var currentAssembly = typeof(SpecFlowDemo_NUnitAssemblyHooks).Assembly;
 
         TestRunnerManager.OnTestRunStart(currentAssembly);
     }
@@ -24,7 +24,7 @@ public class D365Demo_NUnitAssemblyHooks
     [MethodImpl(MethodImplOptions.NoInlining)]
     public void AssemblyCleanup()
     {
-        var currentAssembly = typeof(D365Demo_NUnitAssemblyHooks).Assembly;
+        var currentAssembly = typeof(SpecFlowDemo_NUnitAssemblyHooks).Assembly;
 
         TestRunnerManager.OnTestRunEnd(currentAssembly);
     }

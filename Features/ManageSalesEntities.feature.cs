@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace D365Demo.Features
+namespace SpecFlowDemo.Features
 {
     using TechTalk.SpecFlow;
     using System;
