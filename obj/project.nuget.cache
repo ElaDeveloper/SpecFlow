@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "eFiT0fe+LYEXUsSRfJD7n3yOa+Bsme18V1+Z3NjEXgy3m4iySQOkaL9Q2qSUBIcRozr1+WWEpMbGsWX4oIoeuA==",
+  "dgSpecHash": "j0wV/CTXM/v/P8VhK3+7OkdTIa0OJWwFH4lF8Ut/qnLdav37lyZwH+zcD9lGI+TUjnnxYoNXiFdOARVKXnu1eg==",
   "success": true,
   "projectFilePath": "C:\\Ela\\PlayWright\\SpecFlowLearn\\D365Demo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\RAJENE\\.nuget\\packages\\bitmiracle.libtiff.net\\2.4.649\\bitmiracle.libtiff.net.2.4.649.nupkg.sha512",
     "C:\\Users\\RAJENE\\.nuget\\packages\\bodi\\1.5.0\\bodi.1.5.0.nupkg.sha512",
     "C:\\Users\\RAJENE\\.nuget\\packages\\dynamitey\\2.0.9.136\\dynamitey.2.0.9.136.nupkg.sha512",
-    "C:\\Users\\RAJENE\\.nuget\\packages\\fluentassertions\\6.10.0\\fluentassertions.6.10.0.nupkg.sha512",
+    "C:\\Users\\RAJENE\\.nuget\\packages\\fluentassertions\\6.11.0\\fluentassertions.6.11.0.nupkg.sha512",
     "C:\\Users\\RAJENE\\.nuget\\packages\\gherkin\\19.0.3\\gherkin.19.0.3.nupkg.sha512",
     "C:\\Users\\RAJENE\\.nuget\\packages\\ironsoftware.system.drawing\\2023.3.3\\ironsoftware.system.drawing.2023.3.3.nupkg.sha512",
     "C:\\Users\\RAJENE\\.nuget\\packages\\ironxl.excel\\2023.4.13\\ironxl.excel.2023.4.13.nupkg.sha512",

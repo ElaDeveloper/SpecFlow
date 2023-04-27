@@ -41,7 +41,7 @@ namespace D365Demo.PageObjects
 
         private ILocator PnlParentAccount => page.Locator(selector: "div[aria-label='Dropdown panel']");
 
-        private ILocator BtnSave => page.Locator(selector: "button[aria-label='Save (CTRL+S)']");
+        public ILocator BtnSave => page.Locator(selector: "button[aria-label='Save (CTRL+S)']");
 
         private ILocator TxtAccountFieldSearch => page.Locator(selector: "input[aria-label*='Filter by keyword']");
 

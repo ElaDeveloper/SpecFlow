@@ -1,23 +1,26 @@
-﻿//using D365Demo.Drivers;
+﻿using System.Threading.Tasks;
 using D365Demo.Drivers;
 using D365Demo.PageObjects;
 using D365Demo.TestData;
 using D365Demo.Utilities;
 using Dynamitey.DynamicObjects;
 using Microsoft.Playwright;
+using Microsoft.Playwright.NUnit;
 using NUnit.Framework;
 using System.Linq.Expressions;
 using System.Text.Json;
+using System.Text.RegularExpressions;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace D365Demo.TestCases
 {
 
-    public class Test_Case_Manage_Accounts
+    public class Test_Case_Manage_Accounts : PageTest
     {
 
         private readonly PageObjectAccountEntity pageObjectAccountEntity;
         private readonly Test_Data_Accounts? accountsData;
-        private readonly IPage Page;
+        private new readonly IPage Page;
         private readonly FormatJsonFile formatJsonFile;
 
         public Test_Case_Manage_Accounts(IPage Page)
@@ -26,7 +29,7 @@ namespace D365Demo.TestCases
             formatJsonFile = new FormatJsonFile();
             String MyProjectDir = formatJsonFile.DirProject();
             String filePath = MyProjectDir + "\\TestData\\JsonFiles\\Accounts.json";
-            pageObjectAccountEntity = new PageObjectAccountEntity(Page);
+            pageObjectAccountEntity = new PageObjectAccountEntity(this.Page);
             string text = File.ReadAllText(filePath);
             accountsData = JsonSerializer.Deserialize<Test_Data_Accounts>(text);
         }
@@ -67,7 +70,7 @@ namespace D365Demo.TestCases
             await pageObjectAccountEntity.WaitParentPnlVisiblity();
             await pageObjectAccountEntity.GetParentAccountByText(accountsData.ParentAccountName);
             await pageObjectAccountEntity.SaveForm();
-            Thread.Sleep(6000);
+            await Expect(pageObjectAccountEntity.BtnSave).ToBeVisibleAsync();
         }
 
         public async Task SearchAndDeleteAccount()
@@ -83,7 +86,6 @@ namespace D365Demo.TestCases
             await pageObjectAccountEntity.ClickMoreCommands();
             await pageObjectAccountEntity.ClickDelete();
             await pageObjectAccountEntity.ClickConfirm();
-            Thread.Sleep(3000);
         }
     }
 }

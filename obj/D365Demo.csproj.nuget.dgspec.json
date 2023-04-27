@@ -42,7 +42,7 @@
           "dependencies": {
             "FluentAssertions": {
               "target": "Package",
-              "version": "[6.10.0, )"
+              "version": "[6.11.0, )"
             },
             "IronXL.Excel": {
               "target": "Package",

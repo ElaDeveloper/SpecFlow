@@ -16,7 +16,7 @@ namespace D365Demo.Utilities
             string text = File.ReadAllText("C:\\Ela\\PlayWright\\SpecFlowLearn\\Utilities\\Accounts.json");
             var accountData = JsonSerializer.Deserialize<Test_Data_Accounts>(text);
 
-            Console.WriteLine($"Account Name: {accountData.AccountName}");
+            Console.WriteLine($"Account Name: {accountData!.AccountName}");
             Console.WriteLine($"Parent Acccount Name: {accountData.ParentAccountName}");
             return accountData;
         }
