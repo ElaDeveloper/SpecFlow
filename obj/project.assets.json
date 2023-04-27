@@ -6681,11 +6681,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Ela\\PlayWright\\SpecFlowLearn\\D365Demo.csproj",
-      "projectName": "D365Demo",
-      "projectPath": "C:\\Ela\\PlayWright\\SpecFlowLearn\\D365Demo.csproj",
+      "projectUniqueName": "C:\\Ela\\PlayWright\\SpecFlowDemo\\SpecFlowDemo.csproj",
+      "projectName": "SpecFlowDemo",
+      "projectPath": "C:\\Ela\\PlayWright\\SpecFlowDemo\\SpecFlowDemo.csproj",
       "packagesPath": "C:\\Users\\RAJENE\\.nuget\\packages\\",
-      "outputPath": "C:\\Ela\\PlayWright\\SpecFlowLearn\\obj\\",
+      "outputPath": "C:\\Ela\\PlayWright\\SpecFlowDemo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\RAJENE\\AppData\\Roaming\\NuGet\\NuGet.Config",
