@@ -1,16 +1,7 @@
-﻿using Microsoft.Playwright;
-using NUnit.Framework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static System.Net.Mime.MediaTypeNames;
-using D365Demo.Drivers;
-using D365Demo.PageObjects;
-using D365Demo.Utilities;
+﻿using SpecFlowDemo.Drivers;
+using SpecFlowDemo.PageObjects;
 
-namespace D365Demo.Hooks
+namespace SpecFlowDemo.Hooks
 {
     [Binding]
     public class HooksLaunchApplication

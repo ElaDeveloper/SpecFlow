@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace D365Demo.TestData
+﻿namespace SpecFlowDemo.TestData
 {
 
     public class Test_Data_Accounts

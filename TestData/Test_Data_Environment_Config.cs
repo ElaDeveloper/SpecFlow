@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace D365Demo.TestData
+﻿namespace SpecFlowDemo.TestData
 {
     public class Test_Data_Environment_Config
     {
-        private String? environmentName;
+        private string? environmentName;
 
-        public String EnvironmentName { get => environmentName!; set => environmentName = value; }
+        public string EnvironmentName { get => environmentName!; set => environmentName = value; }
     }
 }

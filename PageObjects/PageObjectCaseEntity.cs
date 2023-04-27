@@ -1,13 +1,6 @@
 ﻿using Microsoft.Playwright;
-using NUnit.Framework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Linq;
 
-namespace D365Demo.PageObjects
+namespace SpecFlowDemo.PageObjects
 {
     public class PageObjectCaseEntity
     {
@@ -31,7 +24,7 @@ namespace D365Demo.PageObjects
 
         private ILocator ExpandSubjectParent => page.Locator(selector: "li[id*='subjectid.fieldControl-subject-tree-dropdown'][aria-expanded='false'] span");
 
-        public ILocator TxtInputCustomerName => page.Locator(selector: "input[data-id='customerid.fieldControl-LookupResultsDropdown_customerid_textInputBox_with_filter_new']"); 
+        public ILocator TxtInputCustomerName => page.Locator(selector: "input[data-id='customerid.fieldControl-LookupResultsDropdown_customerid_textInputBox_with_filter_new']");
 
         public ILocator TxtSearchCustomer => page.Locator(selector: "button[data-id='customerid.fieldControl-LookupResultsDropdown_customerid_search']");
 
@@ -101,7 +94,7 @@ namespace D365Demo.PageObjects
 
         public async Task ClickSubjectDrpDwn() => await DrpDwnSubject.ClickAsync();
 
-        public async Task EnterCaseTitle(String caseTitle)
+        public async Task EnterCaseTitle(string caseTitle)
         {
             await TxtCaseTitle.FillAsync(caseTitle);
         }
@@ -122,7 +115,7 @@ namespace D365Demo.PageObjects
             await TxtServiceSlt.ClickAsync();
         }
 
-        public async Task SelectSubject(String subject)
+        public async Task SelectSubject(string subject)
         {
             await PnlSubject.Filter(new() { HasText = $"{subject}" }).ClickAsync();
         }
@@ -131,50 +124,50 @@ namespace D365Demo.PageObjects
 
         public async Task WaitCustomerPnlVisiblity() => await PnlCustomer.IsVisibleAsync();
 
-        public async Task GetCustomerByText(String customerName)
+        public async Task GetCustomerByText(string customerName)
         {
             await page.Locator(selector: $"//span[contains(@data-id,'customerid.fieldControl')]/child::span[text()='{customerName}']").First.ClickAsync();
         }
 
-        public async Task GetContactByText(String contactEmail)
+        public async Task GetContactByText(string contactEmail)
         {
             await page.Locator(selector: $"//span[contains(@data-id,'primarycontactid.fieldControl-emailaddress')]/child::span[text()='{contactEmail}']").First.ClickAsync();
         }
 
-        public async Task GetProductByText(String productName)
+        public async Task GetProductByText(string productName)
         {
             await page.GetByText(productName).ClickAsync();
         }
 
-        public async Task SelectOrigin(String origin)
+        public async Task SelectOrigin(string origin)
         {
             await DrpDwnOrigin.SelectOptionAsync($"{origin}");
         }
 
-        public async Task EnterContact(String contact)
+        public async Task EnterContact(string contact)
         {
             await TxtSearchContact.FillAsync($"{contact}");
         }
 
         public async Task ClickContactSearch() => await BtnSearchContact.ClickAsync();
 
-        public async Task SelectSatisfaction(String satisfaction)
+        public async Task SelectSatisfaction(string satisfaction)
         {
             await DrpDwnSatisfaction.SelectOptionAsync($"{satisfaction}");
         }
 
-        public async Task EnterProduct(String product)
+        public async Task EnterProduct(string product)
         {
             await TxtProduct.FillAsync($"{product}");
         }
 
         public async Task ClickProductSearch() => await BtnProduct.ClickAsync();
 
-        public async Task EnterDescription(String description)
+        public async Task EnterDescription(string description)
         {
             await TxtDescription.FillAsync(description);
         }
-        public async Task<String?> GetCaseId()
+        public async Task<string?> GetCaseId()
         {
             await TxtCaseID.WaitForAsync();
             await TxtCaseID.ClickAsync();
@@ -182,7 +175,7 @@ namespace D365Demo.PageObjects
             return await TxtCaseID.GetAttributeAsync(name: "value");
         }
 
-        public async Task SelectView(String viewName)
+        public async Task SelectView(string viewName)
         {
             await ChangeFilter.ClickAsync();
             await PnlViewSelector.WaitForAsync();
@@ -190,7 +183,7 @@ namespace D365Demo.PageObjects
             await PnlViewSelector.Filter(new() { HasText = $"{viewName}" }).ClickAsync();
         }
 
-        public async Task SelectCaseSearchResult(String caseId)
+        public async Task SelectCaseSearchResult(string caseId)
         {
             await page.DblClickAsync(selector: $"//div[text()='{caseId}' and contains(@class, 'ms-TooltipHost')]");
         }
@@ -199,36 +192,36 @@ namespace D365Demo.PageObjects
 
         public async Task ClickQueueSearch() => await BtnSearchAddToQueue.ClickAsync();
 
-        public async Task EnterQueue(String queueName)
+        public async Task EnterQueue(string queueName)
         {
             await TxtAddToQueue.FillAsync($"{queueName}");
         }
 
-        public async Task SelectQueueFromPanel(String queueName)
+        public async Task SelectQueueFromPanel(string queueName)
         {
             await page.Locator($"//span[text()='{queueName}']").ClickAsync();
         }
 
         public async Task MenuAssignCaseBtn() => await MenuAssignBtn.ClickAsync();
 
-        public async Task SelectAssingee(String assigneeType)
+        public async Task SelectAssingee(string assigneeType)
         {
 
             await SltAssignTo.SelectOptionAsync(assigneeType);
         }
 
-        public async Task EnterAsignee(String assigneeValue)
+        public async Task EnterAsignee(string assigneeValue)
         {
             await TxtAssignTo.FillAsync(assigneeValue);
         }
 
         public async Task SearchAsignee() => await BtnAssignToSearch.ClickAsync();
 
-        public async Task SelectSearchedTeam(String teamName)
+        public async Task SelectSearchedTeam(string teamName)
         {
             await page.Locator(selector: $"//li[contains(@aria-label, '{teamName}')]").ClickAsync();
         }
 
-        public async Task AddAsignedUser() => await BtnAssignSearchedUser.ClickAsync(); 
+        public async Task AddAsignedUser() => await BtnAssignSearchedUser.ClickAsync();
     }
 }

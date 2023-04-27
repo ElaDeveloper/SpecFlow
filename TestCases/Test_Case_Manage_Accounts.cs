@@ -1,18 +1,11 @@
-﻿using System.Threading.Tasks;
-using D365Demo.Drivers;
-using D365Demo.PageObjects;
-using D365Demo.TestData;
-using D365Demo.Utilities;
-using Dynamitey.DynamicObjects;
-using Microsoft.Playwright;
+﻿using Microsoft.Playwright;
 using Microsoft.Playwright.NUnit;
-using NUnit.Framework;
-using System.Linq.Expressions;
 using System.Text.Json;
-using System.Text.RegularExpressions;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using SpecFlowDemo.TestData;
+using SpecFlowDemo.Utilities;
+using SpecFlowDemo.PageObjects;
 
-namespace D365Demo.TestCases
+namespace SpecFlowDemo.TestCases
 {
 
     public class Test_Case_Manage_Accounts : PageTest
@@ -27,8 +20,8 @@ namespace D365Demo.TestCases
         {
             this.Page = Page;
             formatJsonFile = new FormatJsonFile();
-            String MyProjectDir = formatJsonFile.DirProject();
-            String filePath = MyProjectDir + "\\TestData\\JsonFiles\\Accounts.json";
+            string MyProjectDir = formatJsonFile.DirProject();
+            string filePath = MyProjectDir + "\\TestData\\JsonFiles\\Accounts.json";
             pageObjectAccountEntity = new PageObjectAccountEntity(this.Page);
             string text = File.ReadAllText(filePath);
             accountsData = JsonSerializer.Deserialize<Test_Data_Accounts>(text);
@@ -39,7 +32,7 @@ namespace D365Demo.TestCases
             await pageObjectAccountEntity.NavigateSalesHub();
         }
 
-        public async Task NavigateToAnEntity(String entityName)
+        public async Task NavigateToAnEntity(string entityName)
         {
             switch (entityName.ToUpper())
             {
@@ -81,7 +74,7 @@ namespace D365Demo.TestCases
             await pageObjectAccountEntity.SearchAccount(accountsData.AccountName);
             await pageObjectAccountEntity.ClickAccountSearch();
             await pageObjectAccountEntity.SelectAccountSearch(accountsData.AccountName);
-            String accountNameField = await pageObjectAccountEntity.GetAccountName().InnerTextAsync();
+            string accountNameField = await pageObjectAccountEntity.GetAccountName().InnerTextAsync();
             Console.WriteLine("The name of the account - " + accountNameField);
             await pageObjectAccountEntity.ClickMoreCommands();
             await pageObjectAccountEntity.ClickDelete();

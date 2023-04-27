@@ -1,43 +1,33 @@
-﻿using D365Demo.TestData;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Newtonsoft.Json;
-using NUnit.Framework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using System.Text.Json;
-using FluentAssertions.Equivalency.Tracing;
-using Dynamitey.Internal.Optimization;
+using SpecFlowDemo.TestData;
 
-namespace D365Demo.Utilities
+namespace SpecFlowDemo.Utilities
 {
-    
+
     public class FormatJsonFile
     {
 
         private readonly Test_Data_Environment_Config? accountsData;
-        public void updateJsonFile(String filePath, String jsonNode, String jsonNodeValue)
+        public void updateJsonFile(string filePath, string jsonNode, string jsonNodeValue)
         {
             Console.WriteLine($"Writing data to filepath - {filePath} for node - {jsonNode} having value as {jsonNodeValue}");
-            String jsonString = File.ReadAllText(filePath);
+            string jsonString = File.ReadAllText(filePath);
             // Convert the JSON string to a JObject:
-            JObject? jObject = Newtonsoft.Json.JsonConvert.DeserializeObject(jsonString) as JObject;
+            JObject? jObject = JsonConvert.DeserializeObject(jsonString) as JObject;
             // Select a nested property using a single string:
             JToken? jToken = jObject!.SelectToken(jsonNode);
             // Update the value of the property: 
             jToken!.Replace(jsonNodeValue);
             // Convert the JObject back to a string:
-            String updatedJsonString = jObject.ToString();
+            string updatedJsonString = jObject.ToString();
             File.WriteAllText(filePath, updatedJsonString);
             Console.WriteLine(updatedJsonString);
         }
-        public String DirProject()
+        public string DirProject()
         {
-            String DirDebug = System.IO.Directory.GetCurrentDirectory();
-            String DirProject = DirDebug;
+            string DirDebug = Directory.GetCurrentDirectory();
+            string DirProject = DirDebug;
 
             for (int counter_slash = 0; counter_slash < 3; counter_slash++)
             {

@@ -1,13 +1,6 @@
 ﻿using Microsoft.Playwright;
-using NUnit.Framework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static System.Net.Mime.MediaTypeNames;
 
-namespace D365Demo.PageObjects
+namespace SpecFlowDemo.PageObjects
 {
     public class PageObjectAccountEntity
     {
@@ -56,7 +49,7 @@ namespace D365Demo.PageObjects
         private ILocator BtnConfirmDelete => page.Locator(selector: "button[data-id='confirmButton']");
 
         //Implementation
-        public async Task Login(String userName, String password)
+        public async Task Login(string userName, string password)
         {
             await TxtUserName.WaitForAsync();
             await TxtUserName.FillAsync(userName);
@@ -90,12 +83,12 @@ namespace D365Demo.PageObjects
 
         public async Task AddNewAccount() => await AddAccountBtn.ClickAsync();
 
-        public async Task EnterAccountName(String accountName)
+        public async Task EnterAccountName(string accountName)
         {
             await TxtAccountName.FillAsync(accountName);
         }
 
-        public async Task EnterParentAccountName(String accountName)
+        public async Task EnterParentAccountName(string accountName)
         {
             await TxtParentAccountName.FillAsync(accountName);
         }
@@ -104,7 +97,7 @@ namespace D365Demo.PageObjects
 
         public async Task WaitParentPnlVisiblity() => await PnlParentAccount.IsVisibleAsync();
 
-        public async Task GetParentAccountByText(String parentAccountName)
+        public async Task GetParentAccountByText(string parentAccountName)
         {
             await page.GetByText(parentAccountName).ClickAsync();
         }
@@ -113,14 +106,14 @@ namespace D365Demo.PageObjects
 
         public async Task ClickAccountSearchField() => await TxtAccountFieldSearch.ClickAsync();
 
-        public async Task SearchAccount(String accountName)
+        public async Task SearchAccount(string accountName)
         {
             await TxtSearchAccountName.FillAsync(accountName);
         }
 
         public async Task ClickAccountSearch() => await BtnSearchAccount.ClickAsync();
 
-        public async Task SelectAccountSearch(String accountName)
+        public async Task SelectAccountSearch(string accountName)
         {
             await page.ClickAsync(selector: $"//span[text()='{accountName}']");
         }
@@ -138,7 +131,7 @@ namespace D365Demo.PageObjects
 
         public async Task NavigateCases() => await CasesLnk.ClickAsync();
 
-        public async Task searchEntity(String entityId)
+        public async Task searchEntity(string entityId)
         {
             await TxtAccountFieldSearch.WaitForAsync();
             await TxtAccountFieldSearch.ClickAsync();

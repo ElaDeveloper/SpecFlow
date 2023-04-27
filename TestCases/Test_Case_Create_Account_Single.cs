@@ -1,14 +1,6 @@
-﻿using FluentAssertions;
-using Microsoft.Playwright;
-using NUnit.Framework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection.Emit;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.Playwright;
 
-namespace D365Demo.TestCases
+namespace SpecFlowDemo.TestCases
 {
     public class Test_Case_Create_Account_Single
     {
@@ -58,7 +50,7 @@ namespace D365Demo.TestCases
             await page.FillAsync(selector: "input[aria-label = 'Account Filter by keyword']", "Ela-Example1");
             await page.ClickAsync(selector: "button[aria-label='Start search']");
             await page.ClickAsync(selector: "//span[text()='Ela-Example1']");
-            String accountName = await page.Locator(selector: "input[aria-label='Account Name']").InnerTextAsync();
+            string accountName = await page.Locator(selector: "input[aria-label='Account Name']").InnerTextAsync();
             Console.WriteLine("The name of the account - " + accountName);
             await page.ClickAsync(selector: "button[aria-label='More commands for Account']");
             await page.ClickAsync(selector: "button[aria-label='Delete']");
@@ -67,10 +59,10 @@ namespace D365Demo.TestCases
             await browser.CloseAsync();
         }
 
-        public String DirProject()
+        public string DirProject()
         {
-            String DirDebug = System.IO.Directory.GetCurrentDirectory();
-            String DirProject = DirDebug;
+            string DirDebug = Directory.GetCurrentDirectory();
+            string DirProject = DirDebug;
 
             for (int counter_slash = 0; counter_slash < 3; counter_slash++)
             {
@@ -80,14 +72,14 @@ namespace D365Demo.TestCases
             return DirProject;
         }
 
-       // [Test]
+        // [Test]
         public void ExamplePath()
         {
             Console.WriteLine("Hello path");
-            String MyProjectDir = DirProject();
-            String filePath = MyProjectDir + "\\TestData\\JsonFiles\\Cases.json";
-            String inputFilePath = File.ReadAllText(filePath);
-            Console.WriteLine("Hello1123 - " + inputFilePath);            
+            string MyProjectDir = DirProject();
+            string filePath = MyProjectDir + "\\TestData\\JsonFiles\\Cases.json";
+            string inputFilePath = File.ReadAllText(filePath);
+            Console.WriteLine("Hello1123 - " + inputFilePath);
         }
     }
 }

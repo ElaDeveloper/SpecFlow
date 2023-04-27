@@ -1,12 +1,8 @@
-﻿global using FluentAssertions;
-global using NUnit;
-global using TechTalk.SpecFlow;
-using D365Demo.PageObjects;
-using D365Demo.TestData;
-using NUnit.Framework;
+﻿global using TechTalk.SpecFlow;
+using SpecFlowDemo.TestData;
 using System.Text.Json;
 
-namespace D365Demo.Utilities
+namespace SpecFlowDemo.Utilities
 {
     public class PraseJsonTestData
     {

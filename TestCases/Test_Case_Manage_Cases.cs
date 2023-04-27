@@ -1,19 +1,11 @@
-﻿using D365Demo.PageObjects;
-using Microsoft.Playwright;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.Playwright;
 using System.Text.Json;
-using D365Demo.Hooks;
-using D365Demo.TestData;
-using D365Demo.Utilities;
 using Microsoft.Playwright.NUnit;
-using NUnit.Framework;
-using Microsoft.VisualBasic;
+using SpecFlowDemo.TestData;
+using SpecFlowDemo.PageObjects;
+using SpecFlowDemo.Utilities;
 
-namespace D365Demo.TestCases
+namespace SpecFlowDemo.TestCases
 {
     public class Test_Case_Manage_Cases : PageTest
     {
@@ -22,8 +14,8 @@ namespace D365Demo.TestCases
         private readonly Test_Data_Cases? caseData;
         private readonly IPage iPage;
         private readonly Test_Case_Manage_Accounts test_Case_Manage_Accounts;
-        private String? caseIDGenerated;
-        private String filePath;
+        private string? caseIDGenerated;
+        private string filePath;
         private readonly FormatJsonFile formatJsonFile;
 
         public Test_Case_Manage_Cases(IPage Page)
@@ -32,21 +24,21 @@ namespace D365Demo.TestCases
             pageObjectCaseEntity = new PageObjectCaseEntity(iPage);
             pageObjectAccountEntity = new PageObjectAccountEntity(iPage);
             formatJsonFile = new FormatJsonFile();
-            String MyProjectDir = formatJsonFile.DirProject();
+            string MyProjectDir = formatJsonFile.DirProject();
             filePath = MyProjectDir + "\\TestData\\JsonFiles\\Cases.json";
-            String inputFilePath = File.ReadAllText(filePath);
+            string inputFilePath = File.ReadAllText(filePath);
             caseData = JsonSerializer.Deserialize<Test_Data_Cases>(inputFilePath);
             test_Case_Manage_Accounts = new Test_Case_Manage_Accounts(iPage);
         }
 
-        public async Task SelectSubject(String subject)
+        public async Task SelectSubject(string subject)
         {
             await pageObjectCaseEntity.ClickSubjectDrpDwn();
             await pageObjectCaseEntity.ExpandSubjectValues();
             await pageObjectCaseEntity.SelectSubject(subject);
         }
 
-        public async Task SelectCustomer(String customerName)
+        public async Task SelectCustomer(string customerName)
         {
             await pageObjectCaseEntity.TxtInputCustomerName.FillAsync(customerName);
             await pageObjectCaseEntity.ClickCustomerSearch();
@@ -54,7 +46,7 @@ namespace D365Demo.TestCases
             await pageObjectCaseEntity.GetCustomerByText(customerName);
         }
 
-        public async Task SelectContact(String contactEmail)
+        public async Task SelectContact(string contactEmail)
         {
             await pageObjectCaseEntity.EnterContact(contactEmail);
             await pageObjectCaseEntity.ClickContactSearch();
@@ -62,7 +54,7 @@ namespace D365Demo.TestCases
             await pageObjectCaseEntity.GetContactByText(contactEmail);
         }
 
-        public async Task SelectProduct(String productName)
+        public async Task SelectProduct(string productName)
         {
             await pageObjectCaseEntity.EnterProduct(productName);
             await pageObjectCaseEntity.ClickProductSearch();
@@ -70,7 +62,7 @@ namespace D365Demo.TestCases
             await pageObjectCaseEntity.GetProductByText(productName);
         }
 
-        public async Task SelectQueue(String queueName)
+        public async Task SelectQueue(string queueName)
         {
             await pageObjectCaseEntity.EnterQueue(queueName);
             await pageObjectCaseEntity.ClickQueueSearch();
@@ -78,7 +70,7 @@ namespace D365Demo.TestCases
             await pageObjectCaseEntity.SelectQueueFromPanel(queueName);
         }
 
-        public async Task SelectAssingee(String asigneeType, String asigneeTeamName)
+        public async Task SelectAssingee(string asigneeType, string asigneeTeamName)
         {
             await pageObjectCaseEntity.SelectAssingee(asigneeType);
             await pageObjectCaseEntity.EnterAsignee(asigneeTeamName);
@@ -181,7 +173,7 @@ namespace D365Demo.TestCases
             Console.WriteLine($"Delete the case - {caseIDGenerated}");
             await pageObjectAccountEntity.ClickMoreCommands();
             await pageObjectAccountEntity.ClickDelete();
-            await pageObjectAccountEntity.ClickConfirm(); 
+            await pageObjectAccountEntity.ClickConfirm();
         }
     }
 }

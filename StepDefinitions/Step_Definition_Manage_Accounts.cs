@@ -1,11 +1,7 @@
-using D365Demo.Drivers;
-using D365Demo.Hooks;
-using D365Demo.PageObjects;
-using D365Demo.TestCases;
-using System;
-using TechTalk.SpecFlow;
+using SpecFlowDemo.Hooks;
+using SpecFlowDemo.TestCases;
 
-namespace D365Demo.StepDefinitions
+namespace SpecFlowDemo.StepDefinitions
 {
     [Binding]
     public class Step_Definition_Manage_Accounts

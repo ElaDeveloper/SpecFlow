@@ -1,18 +1,9 @@
 ﻿using NUnit.Framework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System;
-using Microsoft.Playwright;
-using System.IO;
-using D365Demo.TestCases;
-using D365Demo.Drivers;
-using D365Demo.PageObjects;
-using D365Demo.Hooks;
+using SpecFlowDemo.PageObjects;
+using SpecFlowDemo.TestCases;
+using SpecFlowDemo.Drivers;
 
-namespace D365Demo.Utilities
+namespace SpecFlowDemo.Utilities
 {
     public class ExampleTestRun
     {

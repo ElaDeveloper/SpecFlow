@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.Playwright;
+﻿using Microsoft.Playwright;
 
-namespace D365Demo.Drivers
+namespace SpecFlowDemo.Drivers
 {
     public class Driver
     {
