@@ -42,6 +42,8 @@ namespace SpecFlowDemo.PageObjects
 
         private ILocator BtnSearchAccount => page.Locator(selector: "button[aria-label='Start search']");
 
+        public ILocator BtnRefresh => page.GetByLabel("Refresh");
+
         private ILocator BtnMoreCommands => page.Locator(selector: "button[aria-label*='More commands for']");
 
         private ILocator BtnDelete => page.Locator(selector: "button[aria-label='Delete']");
