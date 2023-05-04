@@ -64,7 +64,7 @@ steps:
 - task: PublishTestResults@2
   displayName: 'Publish test results'
   inputs:
-    searchFolder: '$(System.DefaultWorkingDirectory)/bin/Debug/net6.0/'
+    searchFolder: '$(System.DefaultWorkingDirectory)/bin/Debug/net6.0'
     testResultsFormat: 'JUnit'
     testResultsFiles: '**/*.LivingDoc.html' 
     mergeTestResults: true

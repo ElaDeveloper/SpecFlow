@@ -73,9 +73,10 @@ namespace SpecFlowDemo.TestCases
             await pageObjectAccountEntity.ClickAccountSearchField();
             await pageObjectAccountEntity.SearchAccount(accountsData.AccountName);
             await pageObjectAccountEntity.ClickAccountSearch();
-            for (int i = 0; i < 6; i++)
+            for (int i = 0; i < 10; i++)
             {
                 await pageObjectAccountEntity.BtnRefresh.ClickAsync();
+                Thread.Sleep(1000);
             }
             await pageObjectAccountEntity.SelectAccountSearch(accountsData.AccountName);
             string accountNameField = await pageObjectAccountEntity.GetAccountName().InnerTextAsync();
