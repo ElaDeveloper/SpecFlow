@@ -64,10 +64,10 @@ steps:
 - task: PublishTestResults@2
   displayName: 'Publish test results'
   inputs:
-    searchFolder: 'my-e2e-tests/test-results'
+    searchFolder: '$(System.DefaultWorkingDirectory)/bin/Debug/net6.0/'
     testResultsFormat: 'JUnit'
-    testResultsFiles: 'e2e-junit-results.xml' 
+    testResultsFiles: 'LivingDoc.html' 
     mergeTestResults: true
     failTaskOnFailedTests: true
-    testRunTitle: 'My End-To-End Tests'
+    testRunTitle: 'End To End Test'
   condition: succeededOrFailed()
