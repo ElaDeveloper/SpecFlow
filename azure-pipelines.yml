@@ -61,7 +61,7 @@ steps:
     projects: '**/*.csproj'
     testRunTitle: 'new pipeline'
     
-- task: SpecFlowPlus@0
+- task: SpecFlowPlus@2
   displayName: 'LivingDoc with TestAssembly generatorSource'
   inputs:
     generatorSource: 'TestAssembly'
