@@ -60,7 +60,21 @@ steps:
     command: 'test'
     projects: '**/*.csproj'
     testRunTitle: 'new pipeline'
-
+    
+- task: SpecFlowPlus@0
+  displayName: 'LivingDoc with TestAssembly generatorSource'
+  inputs:
+    generatorSource: 'TestAssembly'
+    testAssemblyFilePath: '$(System.DefaultWorkingDirectory)/bin/Debug/**/SpecFlowDemo.dll'
+    projectName: 'testName'
+    testExecutionJson: '**/TestExecution.json'
+    projectLanguage: 'en'
+    workItemPrefix: 'WI'
+  enabled: false
+  continueOnError: true
+  condition: always()
+  timeoutInMinutes: 10
+  
 - task: PublishTestResults@2
   displayName: 'Publish test results'
   inputs:
