@@ -75,9 +75,11 @@ namespace SpecFlowDemo.Features
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Add a new account newly in sales hub app and ensure its deleted")]
+        [NUnit.Framework.CategoryAttribute("Ela")]
         public void AddANewAccountNewlyInSalesHubAppAndEnsureItsDeleted()
         {
-            string[] tagsOfScenario = ((string[])(null));
+            string[] tagsOfScenario = new string[] {
+                    "Ela"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add a new account newly in sales hub app and ensure its deleted", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 4

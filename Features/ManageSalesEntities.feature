@@ -1,6 +1,6 @@
 ﻿Feature: This feature ensures that all the operations involved in accounts are verified
 
-
+@Ela
 Scenario: Add a new account newly in sales hub app and ensure its deleted
 	Given User launches MS Dynamics CRM application and navigates to Sales hub Menu
 	When User adds a new account to the system
