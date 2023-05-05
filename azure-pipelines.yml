@@ -61,12 +61,12 @@ steps:
     projects: '**/*.csproj'
     testRunTitle: 'new pipeline'
     
-- task: SpecFlowPlus@2
+- task: SpecFlowPlus@0
   displayName: 'LivingDoc with TestAssembly generatorSource'
   inputs:
     generatorSource: 'TestAssembly'
     testAssemblyFilePath: '$(System.DefaultWorkingDirectory)/bin/Debug/**/SpecFlowDemo.dll'
-    projectName: 'testName'
+    projectName: 'SpecFlowDemo'
     testExecutionJson: '**/TestExecution.json'
     projectLanguage: 'en'
     workItemPrefix: 'WI'
