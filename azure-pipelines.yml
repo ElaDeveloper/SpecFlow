@@ -70,6 +70,7 @@ steps:
     testExecutionJson: '**/TestExecution.json'
     projectLanguage: 'en'
     workItemPrefix: 'WI'
+  enabled: false
   continueOnError: true
   condition: always()
   timeoutInMinutes: 10
