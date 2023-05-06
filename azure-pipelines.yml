@@ -67,13 +67,12 @@ steps:
     displayName: Install Specflow CLI
     
   - script: 'livingdoc feature-folder . --test-execution-json **\TestExecution.json --work-item-prefix DEVOPS_WI: --work-item-url-template https://dev.azure.com/acme/acme-Integration/_queries/edit/{id}'
-    workingDirectory: $(AcceptanceTestsFolder)
     displayName: Run Living Document Generation
       
   - task: PublishTestResults@2
     displayName: Publish test results
     inputs:
-      searchFolder: $(System.DefaultWorkingDirectory)/bin/Debug/net6.0
+      searchFolder: 'bin/Debug/**/'
       testResultsFormat: JUnit
       testResultsFiles: '**/*.LivingDoc.html'
       mergeTestResults: true
