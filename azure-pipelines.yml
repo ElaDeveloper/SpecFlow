@@ -1,87 +1,93 @@
-# ASP.NET Core (.NET Framework)
-# Build and test ASP.NET Core projects targeting the full .NET Framework.
-# Add steps that publish symbols, save build artifacts, and more:
-# https://learn.microsoft.com/azure/devops/pipelines/languages/dotnet-core
-
 trigger:
-- master
-
+  - master
 pool:
-  vmImage: 'windows-latest'
-
+  vmImage: windows-latest
 variables:
   solution: '**/*.sln'
-  buildPlatform: 'Any CPU'
-  buildConfiguration: 'Release'
-
+  buildPlatform: Any CPU
+  buildConfiguration: Release
 steps:
-- task: UseDotNet@2
-  displayName: 'Install .NET'
-  inputs:
-    packageType: 'sdk'
-    version: '6.0.x'
-    installationPath: $(Agent.ToolsDirectory)/dotnet
-    includePreviewVersions: true
-
-- task: DotNetCoreCLI@2
-  inputs:
-    command: 'build'
-    projects: '**/*.csproj'
-
-- task: DotNetCoreCLI@2
-  inputs:
-    command: 'custom'
-    custom: 'new'
-    arguments: 'tool-manifest'
+  - task: UseDotNet@2
+    displayName: Install .NET
+    inputs:
+      packageType: sdk
+      version: 6.0.x
+      installationPath: $(Agent.ToolsDirectory)/dotnet
+      includePreviewVersions: true
+  - task: DotNetCoreCLI@2
+    inputs:
+      command: build
+      projects: '**/*.csproj'
+  - task: DotNetCoreCLI@2
+    inputs:
+      command: custom
+      custom: new
+      arguments: tool-manifest
+  - task: DotNetCoreCLI@2
+    displayName: Installing Playwright Cli
+    inputs:
+      command: custom
+      custom: tool
+      arguments: install Microsoft.Playwright.CLI
+  - task: DotNetCoreCLI@2
+    displayName: Building tests project
+    inputs:
+      command: build
+      projects: '**/*.csproj'
+  - task: DotNetCoreCLI@2
+    displayName: Run Playwright Install
+    inputs:
+      command: custom
+      custom: 'tool '
+      arguments: run playwright install
+      
+  - task: DotNetCoreCLI@2
+    displayName: Run tests
+    inputs:
+      command: test
+      projects: '**/*.csproj'
+      testRunTitle: new pipeline
+      
+  - task: SpecFlowPlus@0
+    displayName: LivingDoc with TestAssembly generatorSource
+    inputs:
+      projectFilePath: $(AcceptanceTestsFolder)
+      projectName: $(BUILD.DEFINITIONNAME)
+      testExecutionJson: '**\TestExecution.json'
+      workItemPrefix: 'DEVOPS_WI:'
+      workItemUrlTemplate: 'https://dev.azure.com/acme/acme-Integration/_queries/edit/{id}'
+    condition: succeededOrFailed()
     
-- task: DotNetCoreCLI@2
-  displayName: 'Installing Playwright Cli'
-  inputs:
-    command: 'custom'
-    custom: 'tool'
-    arguments: 'install Microsoft.Playwright.CLI'
-
-- task: DotNetCoreCLI@2
-  displayName: 'Building tests project'
-  inputs:
-    command: 'build'
-    projects: '**/*.csproj'
-
-- task: DotNetCoreCLI@2
-  displayName: Run Playwright Install
-  inputs:
-    command: custom
-    custom: 'tool '
-    arguments: run playwright install
-
-- task: DotNetCoreCLI@2
-  displayName: 'Run tests'
-  inputs:
-    command: 'test'
-    projects: '**/*.csproj'
-    testRunTitle: 'new pipeline'
+  - script: dotnet tool install --global SpecFlow.Plus.LivingDoc.CLI
+    workingDirectory: $(AcceptanceTestsFolder)
+    displayName: Install Specflow CLI
+  - script: >-
+      livingdoc feature-folder . --test-execution-json **\TestExecution.json
+      --work-item-prefix DEVOPS_WI: --work-item-url-template
+      https://dev.azure.com/acme/acme-Integration/_queries/edit/{id} 
+      --project-name $(SpecFlowProjectName)  --title $(SpecflowDocumentTitle)
+    workingDirectory: $(AcceptanceTestsFolder)
+    displayName: Run Living Document Generation
     
-- task: SpecFlowPlus@0
-  displayName: 'LivingDoc with TestAssembly generatorSource'
-  inputs:
-    generatorSource: 'TestAssembly'
-    testAssemblyFilePath: '$(System.DefaultWorkingDirectory)/bin/Debug/**/SpecFlowDemo.dll'
-    projectName: 'SpecFlowDemo'
-    testExecutionJson: '**/TestExecution.json'
-    projectLanguage: 'en'
-    workItemPrefix: 'WI'
-  enabled: false
-  continueOnError: true
-  condition: always()
-  timeoutInMinutes: 10
-  
-- task: PublishTestResults@2
-  displayName: 'Publish test results'
-  inputs:
-    searchFolder: '$(System.DefaultWorkingDirectory)/bin/Debug/net6.0'
-    testResultsFormat: 'JUnit'
-    testResultsFiles: '**/*.LivingDoc.html' 
-    mergeTestResults: true
-    failTaskOnFailedTests: true
-    testRunTitle: 'End To End Test'
-  condition: succeededOrFailed()
+  - task: CopyFiles@2
+    displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)'
+    inputs:
+      SourceFolder: $(AcceptanceTestsFolder)
+      Contents: LivingDoc.html
+      TargetFolder: $(Build.ArtifactStagingDirectory)
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publish Artifact: $(BUILD.DEFINITIONNAME)-LivingDocument'
+    inputs:
+      PathtoPublish: $(Build.ArtifactStagingDirectory)\LivingDoc.html
+      ArtifactName: $(BUILD.DEFINITIONNAME)-LivingDocument
+      
+  - task: PublishTestResults@2
+    displayName: Publish test results
+    inputs:
+      searchFolder: $(System.DefaultWorkingDirectory)/bin/Debug/net6.0
+      testResultsFormat: JUnit
+      testResultsFiles: '**/*.LivingDoc.html'
+      mergeTestResults: true
+      failTaskOnFailedTests: true
+      testRunTitle: End To End Test
+    condition: succeededOrFailed()
