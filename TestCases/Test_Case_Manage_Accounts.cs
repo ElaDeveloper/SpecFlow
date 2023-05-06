@@ -70,6 +70,7 @@ namespace SpecFlowDemo.TestCases
         {
             Console.WriteLine("Search and delete account - " + accountsData!.AccountName);
             await pageObjectAccountEntity.NavigateAccounts();
+            await pageObjectAccountEntity.NavigateAccounts();
             await pageObjectAccountEntity.ClickAccountSearchField();
             await pageObjectAccountEntity.SearchAccount(accountsData.AccountName);
             await pageObjectAccountEntity.ClickAccountSearch();
@@ -77,6 +78,7 @@ namespace SpecFlowDemo.TestCases
             {
                 await pageObjectAccountEntity.BtnRefresh.WaitForAsync();
                 await pageObjectAccountEntity.BtnRefresh.ClickAsync();
+                Thread.Sleep(1000);
             }
             await pageObjectAccountEntity.SelectAccountSearch(accountsData.AccountName);
             string accountNameField = await pageObjectAccountEntity.GetAccountName().InnerTextAsync();

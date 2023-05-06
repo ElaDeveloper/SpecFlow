@@ -14,26 +14,31 @@ steps:
       version: 6.0.x
       installationPath: $(Agent.ToolsDirectory)/dotnet
       includePreviewVersions: true
+      
   - task: DotNetCoreCLI@2
     inputs:
       command: build
       projects: '**/*.csproj'
+      
   - task: DotNetCoreCLI@2
     inputs:
       command: custom
       custom: new
       arguments: tool-manifest
+      
   - task: DotNetCoreCLI@2
     displayName: Installing Playwright Cli
     inputs:
       command: custom
       custom: tool
       arguments: install Microsoft.Playwright.CLI
+      
   - task: DotNetCoreCLI@2
     displayName: Building tests project
     inputs:
       command: build
       projects: '**/*.csproj'
+      
   - task: DotNetCoreCLI@2
     displayName: Run Playwright Install
     inputs:
@@ -51,35 +56,20 @@ steps:
   - task: SpecFlowPlus@0
     displayName: LivingDoc with TestAssembly generatorSource
     inputs:
-      projectFilePath: $(AcceptanceTestsFolder)
-      projectName: $(BUILD.DEFINITIONNAME)
-      testExecutionJson: '**\TestExecution.json'
+      generatorSource: 'TestAssembly'
+      testAssemblyFilePath: 'bin/Debug/**/SpecFlowDemo.dll'
+      testExecutionJson: '**/TestExecution.json'
       workItemPrefix: 'DEVOPS_WI:'
       workItemUrlTemplate: 'https://dev.azure.com/acme/acme-Integration/_queries/edit/{id}'
     condition: succeededOrFailed()
     
   - script: dotnet tool install --global SpecFlow.Plus.LivingDoc.CLI
-    workingDirectory: $(AcceptanceTestsFolder)
+    workingDirectory: '**/'
     displayName: Install Specflow CLI
-  - script: >-
-      livingdoc feature-folder . --test-execution-json **\TestExecution.json
-      --work-item-prefix DEVOPS_WI: --work-item-url-template
-      https://dev.azure.com/acme/acme-Integration/_queries/edit/{id} 
-      --project-name $(SpecFlowProjectName)  --title $(SpecflowDocumentTitle)
+    
+  - script: 'livingdoc feature-folder . --test-execution-json **\TestExecution.json --work-item-prefix DEVOPS_WI: --work-item-url-template https://dev.azure.com/acme/acme-Integration/_queries/edit/{id}'
     workingDirectory: $(AcceptanceTestsFolder)
     displayName: Run Living Document Generation
-    
-  - task: CopyFiles@2
-    displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)'
-    inputs:
-      SourceFolder: $(AcceptanceTestsFolder)
-      Contents: LivingDoc.html
-      TargetFolder: $(Build.ArtifactStagingDirectory)
-  - task: PublishBuildArtifacts@1
-    displayName: 'Publish Artifact: $(BUILD.DEFINITIONNAME)-LivingDocument'
-    inputs:
-      PathtoPublish: $(Build.ArtifactStagingDirectory)\LivingDoc.html
-      ArtifactName: $(BUILD.DEFINITIONNAME)-LivingDocument
       
   - task: PublishTestResults@2
     displayName: Publish test results
