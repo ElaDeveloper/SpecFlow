@@ -60,11 +60,10 @@ steps:
       testAssemblyFilePath: 'bin/Debug/**/SpecFlowDemo.dll'
       testExecutionJson: '**/TestExecution.json'
       workItemPrefix: 'DEVOPS_WI:'
-      workItemUrlTemplate: 'https://dev.azure.com/acme/acme-Integration/_queries/edit/{id}'
+      workItemUrlTemplate: 'https://dev.azure.com/elaPractice/AgileProcess/_queries/edit/{id}'
     condition: succeededOrFailed()
     
   - script: dotnet tool install --global SpecFlow.Plus.LivingDoc.CLI
-    workingDirectory: '**/'
     displayName: Install Specflow CLI
     
   - script: 'livingdoc feature-folder . --test-execution-json **\TestExecution.json --work-item-prefix DEVOPS_WI: --work-item-url-template https://dev.azure.com/acme/acme-Integration/_queries/edit/{id}'
